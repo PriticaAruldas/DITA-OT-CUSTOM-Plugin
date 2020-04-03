@@ -18,35 +18,17 @@
 		<xsl:attribute name='leader-pattern'>space</xsl:attribute>
 </xsl:attribute-set>
 
-<!--Page Number-->
-<!-- <xsl:attribute-set name="_toc_page-number">
-    <xsl:attribute name="font-size">large</xsl:attribute>
-     <xsl:attribute name="font-weight">bold</xsl:attribute>
-     <xsl:attribute name="start-indent">400px</xsl:attribute>
-</xsl:attribute-set> -->
-<!-- <xsl:attribute-set name="page-sequence.frontmatter">
-    <xsl:attribute name="format">1</xsl:attribute>
- </xsl:attribute-set> -->
-
 <!--Chapter Title-->
-<xsl:attribute-set name="__toc__topic__content">
-    <xsl:attribute name="color">
-        <xsl:variable name="level" select="count(ancestor-or-self::*[contains(@class,'topic/topic')])"/>
-        <xsl:choose>
-            <xsl:when test="$level = 1">blue</xsl:when>
-            <xsl:otherwise>yellow</xsl:otherwise>
-        </xsl:choose>
-    </xsl:attribute>
-    <xsl:attribute name="font-size">12pt</xsl:attribute>
-</xsl:attribute-set>
-
-    <!-- <xsl:attribute name="font-size">
-        <xsl:variable name="level" select="count(ancestor-or-self::*[contains(@class,'topic/topic')])"/>
-        <xsl:choose>
-            <xsl:when test="$level = 1">normal</xsl:when>
-            <xsl:otherwise>12pt</xsl:otherwise>
-        </xsl:choose>
-    </xsl:attribute> -->
+    <xsl:attribute-set name="__toc__topic__content">
+        <xsl:attribute name="color">
+            <xsl:variable name="level" select="count(ancestor-or-self::*[contains(@class,'topic/topic')])"/>
+            <xsl:choose>
+                <xsl:when test="$level = 1">blue</xsl:when>
+                <xsl:otherwise>black</xsl:otherwise>
+            </xsl:choose>
+        </xsl:attribute>
+        <xsl:attribute name="font-size">12pt</xsl:attribute>
+    </xsl:attribute-set>
 
     <xsl:attribute-set name="__toc__chapter__content" use-attribute-sets="__toc__topic__content">
         <xsl:attribute name="font-size">12pt</xsl:attribute>
@@ -61,6 +43,48 @@
     <xsl:attribute-set name="_toc_appendix_content" use-attribute-sets="__toc__topic__content">
         <xsl:attribute name="font-weight">normal</xsl:attribute>
         <xsl:attribute name="color">blue</xsl:attribute>
-    </xsl:attribute>
+    </xsl:attribute-set>
+
+<xsl:attribute-set name="__toc__part__content" use-attribute-sets="__toc__topic__content">
+        <xsl:attribute name="font-weight">normal</xsl:attribute>
+        <xsl:attribute name="color"><xsl:value-of select="$custom_blue_color"/></xsl:attribute>
+    </xsl:attribute-set>
+    
+    <xsl:attribute-set name="__toc__preface__content" use-attribute-sets="__toc__topic__content">
+        <xsl:attribute name="font-weight">normal</xsl:attribute>
+        <xsl:attribute name="color"><xsl:value-of select="$custom_blue_color"/></xsl:attribute>
+    </xsl:attribute-set>
+    
+    <xsl:attribute-set name="__toc__notices__content" use-attribute-sets="__toc__topic__content">
+        <xsl:attribute name="font-weight">normal</xsl:attribute>
+        <xsl:attribute name="color"><xsl:value-of select="$custom_blue_color"/></xsl:attribute>
+    </xsl:attribute-set>
+    
+    <!-- Added for back compatibility since __toc__content was renamed into __toc__topic__content-->
+    <xsl:attribute-set name="__toc__content" use-attribute-sets="__toc__topic__content">
+        <xsl:attribute name="font-weight">normal</xsl:attribute>
+        <xsl:attribute name="color"><xsl:value-of select="$custom_blue_color"/></xsl:attribute>        
+    </xsl:attribute-set>
+    
+    <xsl:attribute-set name="__toc__topic__content__booklist" use-attribute-sets="__toc__topic__content">
+        <xsl:attribute name="font-weight">normal</xsl:attribute>
+        <xsl:attribute name="color"><xsl:value-of select="$custom_blue_color"/></xsl:attribute>        
+    </xsl:attribute-set>
+    
+    <!-- 
+        Chapter's summary section that is displayed immediately after the chapter's minitoc.
+    -->
+    <xsl:attribute-set name="pdf2.ug__toc__mini__summary">
+        <xsl:attribute name="space-before">20pt</xsl:attribute>
+    </xsl:attribute-set>
+    
+    <!-- 
+        Attribute set used when rendering the chapter's MINITOC for ug customization.
+    -->
+    <xsl:attribute-set name="pdf2.ug__toc__mini" use-attribute-sets="__toc__mini">
+        <xsl:attribute name="font-size">10.5pt</xsl:attribute>
+        <xsl:attribute name="font-family">sans-serif</xsl:attribute>
+        <xsl:attribute name="end-indent">5pt</xsl:attribute>
+    </xsl:attribute-set>
 
 </xsl:stylesheet>

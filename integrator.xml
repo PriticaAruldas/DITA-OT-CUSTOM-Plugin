@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project name="com.metapercept.cust-pdf" default="dita2cust-pdf">
+    <property name="transtype" value="cust-pdf"/>
+        <target name="dita2cust-pdf" 
+            xmlns:dita="http://dita-ot.sourceforge.net" 
+            dita:extension="depends org.dita.dost.platform.InsertDependsAction">
+        <property name="customization.dir" location="${dita.plugin.com.metapercept.cust-pdf.dir}/cfg"/>
+        <antcall target="dita2pdf2"/>
+    </target>
+</project>

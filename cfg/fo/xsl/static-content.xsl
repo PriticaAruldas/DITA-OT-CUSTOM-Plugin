@@ -65,15 +65,15 @@
     <!--
         Body static content header: first, odd, and last
     -->
-    <xsl:template name="insertBodyFirstHeader"/>
+    <!-- <xsl:template name="insertBodyFirstHeader"/>
     <xsl:template name="insertBodyEvenHeader"/>
-    <xsl:template name="insertBodyOddHeader"/>
+    <xsl:template name="insertBodyOddHeader"/> -->
 
     <!--
         TOC header
     -->
-    <xsl:template name="insertTocOddHeader"/>
-    <xsl:template name="insertTocEvenHeader"/>
+    <!-- <xsl:template name="insertTocOddHeader"/>
+    <xsl:template name="insertTocEvenHeader"/> -->
 
     <!--
         TOC footer
@@ -95,8 +95,8 @@
     </xsl:template>
 
     <!-- Index footer and header -->
-    <xsl:template name="insertIndexOddHeader"/>
-    <xsl:template name="insertIndexEvenHeader"/>
+    <!-- <xsl:template name="insertIndexOddHeader"/>
+    <xsl:template name="insertIndexEvenHeader"/> -->
 
     <xsl:template name="insertIndexOddFooter">
         <fo:static-content flow-name="odd-index-footer">
@@ -113,6 +113,108 @@
             </xsl:call-template>
         </fo:static-content>
     </xsl:template>
+<!--****************************************************************************************************-->
 
-    
+<xsl:template name="insertBodyOddHeader">
+        <fo:static-content flow-name="odd-body-header">
+            <fo:block xsl:use-attribute-sets="odd__header_oneplus">
+                <!-- <xsl:call-template name="getVariable"> -->
+                    <!-- <xsl:with-param name="id" select="'Body odd header'"/> -->
+                    <!-- <xsl:with-param name="params"> -->
+                        <!-- <heading> -->
+                            <!-- <fo:inline xsl:use-attribute-sets="__body__odd__header__heading"> -->
+                                <!-- <fo:retrieve-marker retrieve-class-name="current-header"/> -->
+                            <!-- </fo:inline> -->
+                        <!-- </heading> -->
+                    <!-- </xsl:with-param> -->
+                <!-- </xsl:call-template> -->
+            </fo:block>
+        </fo:static-content>
+</xsl:template>
+
+<xsl:template name="insertBodyEvenHeader">
+        <fo:static-content flow-name="even-body-header">
+            <fo:block xsl:use-attribute-sets="even__header_oneplus">
+                <!-- <xsl:call-template name="getVariable"> -->
+                    <!-- <xsl:with-param name="id" select="'Body even header'"/> -->
+                    <!-- <xsl:with-param name="params"> -->
+                        <!-- <heading> -->
+                            <!-- <fo:inline xsl:use-attribute-sets="__body__even__header__heading"> -->
+                                <!-- <fo:retrieve-marker retrieve-class-name="current-header"/> -->
+                            <!-- </fo:inline> -->
+                        <!-- </heading> -->
+                    <!-- </xsl:with-param> -->
+                <!-- </xsl:call-template> -->
+            </fo:block>
+        </fo:static-content>
+</xsl:template>
+	
+<xsl:template name="insertIndexOddHeader">
+        <fo:static-content flow-name="odd-index-header">
+            <fo:block xsl:use-attribute-sets="odd__header_oneplus">
+                <!-- <xsl:call-template name="getVariable"> -->
+                    <!-- <xsl:with-param name="id" select="'Body odd header'"/> -->
+                    <!-- <xsl:with-param name="params"> -->
+                        <!-- <heading> -->
+                            <!-- <fo:inline xsl:use-attribute-sets="__body__odd__header__heading"> -->
+                                <!-- <fo:retrieve-marker retrieve-class-name="current-header"/> -->
+                            <!-- </fo:inline> -->
+                        <!-- </heading> -->
+                    <!-- </xsl:with-param> -->
+                <!-- </xsl:call-template> -->
+            </fo:block>
+        </fo:static-content>
+</xsl:template>
+
+<xsl:template name="insertIndexEvenHeader">
+        <fo:static-content flow-name="even-index-header">
+            <fo:block xsl:use-attribute-sets="even__header_oneplus">
+                <!-- <xsl:call-template name="getVariable"> -->
+                    <!-- <xsl:with-param name="id" select="'Body even header'"/> -->
+                    <!-- <xsl:with-param name="params"> -->
+                        <!-- <heading> -->
+                            <!-- <fo:inline xsl:use-attribute-sets="__body__even__header__heading"> -->
+                                <!-- <fo:retrieve-marker retrieve-class-name="current-header"/> -->
+                            <!-- </fo:inline> -->
+                        <!-- </heading> -->
+                    <!-- </xsl:with-param> -->
+                <!-- </xsl:call-template> -->
+            </fo:block>
+        </fo:static-content>
+</xsl:template>	
+
+
+<xsl:template name="insertTocOddHeader">
+        <fo:static-content flow-name="odd-toc-header">
+            <fo:block xsl:use-attribute-sets="odd__header_oneplus">
+                <!-- <xsl:call-template name="getVariable"> -->
+                    <!-- <xsl:with-param name="id" select="'Toc odd header'"/> -->
+                    <!-- <xsl:with-param name="params"> -->
+                        <!-- <heading> -->
+                            <!-- <fo:inline xsl:use-attribute-sets="__body__odd__header__heading"> -->
+                                <!-- <fo:retrieve-marker retrieve-class-name="current-header"/> -->
+                            <!-- </fo:inline> -->
+                        <!-- </heading> -->
+                    <!-- </xsl:with-param> -->
+                <!-- </xsl:call-template> -->
+            </fo:block>
+        </fo:static-content>
+</xsl:template>
+
+<xsl:template name="insertTocEvenHeader">
+        <fo:static-content flow-name="even-toc-header">
+            <fo:block xsl:use-attribute-sets="even__header_oneplus">
+                <!-- <xsl:call-template name="getVariable"> -->
+                    <!-- <xsl:with-param name="id" select="'Toc even header'"/> -->
+                    <!-- <xsl:with-param name="params"> -->
+                        <!-- <heading> -->
+                            <!-- <fo:inline xsl:use-attribute-sets="__body__even__header__heading"> -->
+                                <!-- <fo:retrieve-marker retrieve-class-name="current-header"/> -->
+                            <!-- </fo:inline> -->
+                        <!-- </heading> -->
+                    <!-- </xsl:with-param> -->
+                <!-- </xsl:call-template> -->
+            </fo:block>
+        </fo:static-content>
+</xsl:template>    
 </xsl:stylesheet>

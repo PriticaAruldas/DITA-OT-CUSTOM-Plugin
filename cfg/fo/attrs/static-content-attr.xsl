@@ -19,16 +19,40 @@
     <xsl:attribute name="font-size">12pt</xsl:attribute>
 </xsl:attribute-set>
 
+<!--Header Content-->
+<xsl:attribute-set name="pagenum">
+    <xsl:attribute name="font-weight">300</xsl:attribute>
+	<xsl:attribute name='color'>#7F7F7F</xsl:attribute>
+</xsl:attribute-set>
 
-<!-- <xsl:attribute-set name="odd__header">
+<xsl:attribute-set name="odd__header">
 	<xsl:attribute name='color'>yellow</xsl:attribute>
 	<xsl:attribute name='font-weight'>300</xsl:attribute>
 </xsl:attribute-set>
 
 <xsl:attribute-set name="even__header">
-	<xsl:attribute name='color'></xsl:attribute>
+	<xsl:attribute name='color'>yellow</xsl:attribute>
 	<xsl:attribute name='font-weight'>300</xsl:attribute>
-</xsl:attribute-set> -->
+</xsl:attribute-set>
+
+<xsl:attribute-set name="odd__header_oneplus" use-attribute-sets="odd__header">
+    <xsl:attribute name="text-align">end</xsl:attribute>
+	<xsl:attribute name="space-before">20pt</xsl:attribute>
+    <xsl:attribute name="end-indent">10pt</xsl:attribute>
+    <xsl:attribute name="space-before">10pt</xsl:attribute>
+	<xsl:attribute name="margin-right">25pt</xsl:attribute>
+	<xsl:attribute name="font-size">12pt</xsl:attribute>
+    <!-- <xsl:attribute name="space-before.condi__body__odd__footertionality">retain</xsl:attribute> -->
+</xsl:attribute-set>
+
+<xsl:attribute-set name="even__header_oneplus" use-attribute-sets="even__header">
+    <xsl:attribute name="text-align">end</xsl:attribute>
+    <xsl:attribute name="start-indent">10pt</xsl:attribute>
+    <xsl:attribute name="space-before">20pt</xsl:attribute>
+	<xsl:attribute name="margin-right">25pt</xsl:attribute>
+    <xsl:attribute name="font-size">12pt</xsl:attribute>	
+    <xsl:attribute name="space-before.conditionality">retain</xsl:attribute>
+</xsl:attribute-set>
 
 
 

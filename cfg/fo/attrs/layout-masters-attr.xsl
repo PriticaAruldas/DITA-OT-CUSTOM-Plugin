@@ -4,10 +4,11 @@
     version="2.0">
 
 
-<xsl:attribute-set name="region-body__frontmatter.odd" use-attribute-sets="region-body.odd">
-        <xsl:attribute name="background-image">url(Customization/OpenTopic/common/artwork/image4.jpg)</xsl:attribute>
-        <!-- <xsl:attribute name="background-position-vertical">350px 350px</xsl:attribute>
-        <xsl:attribute name="background-position-horizontal">200px 200px</xsl:attribute> -->
+    <xsl:attribute-set name="region-body__frontmatter.odd" use-attribute-sets="region-body.odd">
+        <!-- <xsl:attribute name="background-image">url(Customization/OpenTopic/common/artwork/image4.jpg)</xsl:attribute>
+        <xsl:attribute name="background-position-vertical">350px 350px</xsl:attribute>
+        <xsl:attribute name="background-position-horizontal">200px 200px</xsl:attribute>  -->
+        <xsl:attribute name="background-color">grey</xsl:attribute>
         <xsl:attribute name="background-position">150px 150px</xsl:attribute>
 
         

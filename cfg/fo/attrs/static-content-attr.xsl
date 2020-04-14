@@ -8,52 +8,19 @@
 </xsl:attribute-set>
 
 <xsl:attribute-set name="pdf2.ug__frontmatter__pagenumber__style">
-    <xsl:attribute name="padding">10mm 5mm</xsl:attribute>
-	<xsl:attribute name="color">black</xsl:attribute>
+    <!-- <xsl:attribute name="padding">10mm 5mm</xsl:attribute> -->
+	<xsl:attribute name="color">blue</xsl:attribute>
+    <!-- <xsl:attribute name="background-color">yellow</xsl:attribute> -->
     <xsl:attribute name="font-size">12pt</xsl:attribute>
+    <xsl:attribute name="font-weight">4pt</xsl:attribute>
 </xsl:attribute-set>
 
-<xsl:attribute-set name="pdf2.ug__frontmatter__footer__text">
+<xsl:attribute-set name="pdf2.ug__frontmatter__header__text">
     <xsl:attribute name="color">black</xsl:attribute>
+    <xsl:attribute name="padding-top">10pt</xsl:attribute>
     <xsl:attribute name="font-family">Serif</xsl:attribute>
     <xsl:attribute name="font-size">12pt</xsl:attribute>
+    <xsl:attribute name="font-weight">4pt</xsl:attribute>
 </xsl:attribute-set>
-
-<!--Header Content-->
-<xsl:attribute-set name="pagenum">
-    <xsl:attribute name="font-weight">300</xsl:attribute>
-	<xsl:attribute name='color'>#7F7F7F</xsl:attribute>
-</xsl:attribute-set>
-
-<xsl:attribute-set name="odd__header">
-	<xsl:attribute name='color'>yellow</xsl:attribute>
-	<xsl:attribute name='font-weight'>300</xsl:attribute>
-</xsl:attribute-set>
-
-<xsl:attribute-set name="even__header">
-	<xsl:attribute name='color'>yellow</xsl:attribute>
-	<xsl:attribute name='font-weight'>300</xsl:attribute>
-</xsl:attribute-set>
-
-<xsl:attribute-set name="odd__header_oneplus" use-attribute-sets="odd__header">
-    <xsl:attribute name="text-align">end</xsl:attribute>
-	<xsl:attribute name="space-before">20pt</xsl:attribute>
-    <xsl:attribute name="end-indent">10pt</xsl:attribute>
-    <xsl:attribute name="space-before">10pt</xsl:attribute>
-	<xsl:attribute name="margin-right">25pt</xsl:attribute>
-	<xsl:attribute name="font-size">12pt</xsl:attribute>
-    <!-- <xsl:attribute name="space-before.condi__body__odd__footertionality">retain</xsl:attribute> -->
-</xsl:attribute-set>
-
-<xsl:attribute-set name="even__header_oneplus" use-attribute-sets="even__header">
-    <xsl:attribute name="text-align">end</xsl:attribute>
-    <xsl:attribute name="start-indent">10pt</xsl:attribute>
-    <xsl:attribute name="space-before">20pt</xsl:attribute>
-	<xsl:attribute name="margin-right">25pt</xsl:attribute>
-    <xsl:attribute name="font-size">12pt</xsl:attribute>	
-    <xsl:attribute name="space-before.conditionality">retain</xsl:attribute>
-</xsl:attribute-set>
-
-
 
 </xsl:stylesheet>

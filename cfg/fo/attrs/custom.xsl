@@ -3,11 +3,13 @@
                 version="2.0">
   <!-- Change page size to A4 -->
    <xsl:import href="frontmater.xsl" />
-   <xsl:import href="toc.xsl" />
+   <xsl:import href="toc-attr.xsl" />
    <xsl:import href="index-attr.xsl" />
-    <xsl:import href="static-content-attr.xsl" />
+    <xsl:import href="static-content-attr.xsl"/>
     <xsl:import href="common-attr.xsl" />
-    <xsl:import href="layout-masters-attr.xsl" />
+    <xsl:import href="layout-masters-attr.xsl"/>
+    <xsl:import href="list-attr.xsl"/>
+    <xsl:import href="table-attr.xsl"/>
 
   <xsl:variable name="page-width">210mm</xsl:variable>
   <xsl:variable name="page-height">297mm</xsl:variable>

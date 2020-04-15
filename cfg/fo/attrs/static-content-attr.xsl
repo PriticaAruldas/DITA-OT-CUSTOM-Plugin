@@ -9,18 +9,18 @@
 
 <xsl:attribute-set name="pdf2.ug__frontmatter__pagenumber__style">
     <!-- <xsl:attribute name="padding">10mm 5mm</xsl:attribute> -->
-	<xsl:attribute name="color">blue</xsl:attribute>
+	<xsl:attribute name="color">black</xsl:attribute>
     <!-- <xsl:attribute name="background-color">yellow</xsl:attribute> -->
-    <xsl:attribute name="font-size">12pt</xsl:attribute>
-    <xsl:attribute name="font-weight">4pt</xsl:attribute>
+    <xsl:attribute name="font-size">13pt</xsl:attribute>
+    <xsl:attribute name="font-weight">5pt</xsl:attribute>
 </xsl:attribute-set>
 
 <xsl:attribute-set name="pdf2.ug__frontmatter__header__text">
     <xsl:attribute name="color">black</xsl:attribute>
     <xsl:attribute name="padding-top">10pt</xsl:attribute>
     <xsl:attribute name="font-family">Serif</xsl:attribute>
-    <xsl:attribute name="font-size">12pt</xsl:attribute>
-    <xsl:attribute name="font-weight">4pt</xsl:attribute>
+    <xsl:attribute name="font-size">13pt</xsl:attribute>
+    <xsl:attribute name="font-weight">5pt</xsl:attribute>
 </xsl:attribute-set>
 
 </xsl:stylesheet>

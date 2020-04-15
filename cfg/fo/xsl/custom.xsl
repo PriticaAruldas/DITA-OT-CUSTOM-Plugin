@@ -10,6 +10,8 @@
   <xsl:import href="fo-dl-as-dl.xsl"/>
   <xsl:import href="preface.xsl"/>
   <xsl:import href="layout-master.xsl"/>
+  <xsl:import href="list.xsl"/>
+  <xsl:import href="table.xsl"/>
   
   <!-- Move figure title to top and description to bottom -->
   <xsl:template match="*[contains(@class,' topic/fig ')]">

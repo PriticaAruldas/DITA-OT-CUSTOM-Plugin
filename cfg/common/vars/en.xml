@@ -5,7 +5,11 @@
     <param ref-name="number"/>
   </variable>
   <!-- Change unordered list bullet to an em dash -->
-  <variable id="Unordered List bullet">&#x2014;</variable>
+   <variable id="Unordered List bullet">&#x25AA;</variable>
+
+ <!-- <variable id="Unordered List bullet">&#x2014;</variable> -->
+  <!-- <variable id="Unordered List bullet L2">&#x25AA;</variable>
+      <variable id="Unordered List bullet L3">&#x2023;</variable> -->
 
   <!-- The footer that appears on Preface odd-numbered pages. -->
 <variable id="Preface odd footer">

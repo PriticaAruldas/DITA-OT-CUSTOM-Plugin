@@ -228,7 +228,7 @@
             <xsl:call-template name="startPageNumbering"/>
             <xsl:call-template name="insertPrefaceStaticContents"/>
             <fo:flow flow-name="xsl-region-body">
-                <fo:block xsl:use-attribute-sets="topic">
+                <fo:block  xsl:use-attribute-sets="topic">
                     <xsl:call-template name="commonattributes"/>
                     <xsl:if test="empty(ancestor::*[contains(@class, ' topic/topic ')])">
                         <fo:marker marker-class-name="current-topic-number">
@@ -253,7 +253,7 @@
                     
                     <xsl:choose>
                         <xsl:when test="$pdf2.ug.chapter.header eq 'dita-ot-default'">
-                            <fo:block xsl:use-attribute-sets="topic.title">
+                            <fo:block font-size="70pt" xsl:use-attribute-sets="topic.title">
                                 <xsl:call-template name="pullPrologIndexTerms"/>
                                 <xsl:for-each select="*[contains(@class,' topic/title ')]">
                                     <xsl:apply-templates select="." mode="getTitle"/>

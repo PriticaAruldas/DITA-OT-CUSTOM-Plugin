@@ -42,21 +42,21 @@
     <xsl:template name="insertFooterContent">
         <xsl:param name="addChapterTitle" select="true()"/>
         
-        <fo:block text-align-last="justify" start-indent="15mm" end-indent="15mm" margin-top="5mm" font-size="2.7em">
+        <fo:block text-align-last="justify" start-indent="15mm" end-indent="15mm" margin-top="5mm" margin-bottom="45mm" font-size="2.7em">
             <xsl:if test="$addChapterTitle">
                 <fo:inline xsl:use-attribute-sets="pdf2.ug__frontmatter__header__text">
                     <fo:retrieve-marker retrieve-class-name="current-header"/>
                 </fo:inline>
             </xsl:if>
-            
+
             <fo:leader leader-pattern="space"/>
             
             <fo:inline xsl:use-attribute-sets="pdf2.ug__frontmatter__pagenumber__style">
                 <fo:page-number/>
             </fo:inline>
+            
         </fo:block>
-    </xsl:template>
-    
+    </xsl:template>    
     <!--
         Body static content header: first, odd, and last
     -->

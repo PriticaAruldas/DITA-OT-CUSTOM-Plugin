@@ -15,7 +15,42 @@
             <xsl:attribute name="color">blue</xsl:attribute>
         </xsl:attribute-set>
 
+        <!-- FIXME: Incorrectly named, should be index.group -->
+    <xsl:attribute-set name="index.entry">
+        <xsl:attribute name="space-after">14pt</xsl:attribute>
+        <xsl:attribute name="font-size">13pt</xsl:attribute>
+    </xsl:attribute-set>
+  
+    <xsl:attribute-set name="index.term">
+    </xsl:attribute-set>
+
+  <xsl:variable name="index.indent" select="'18pt'"/>
+
+    <xsl:attribute-set name="index-indents">
+        <xsl:attribute name="end-indent">5pt</xsl:attribute>
+        <xsl:attribute name="last-line-end-indent">0pt</xsl:attribute>
+        <xsl:attribute name="start-indent"><xsl:value-of select="$index.indent"/> * 2</xsl:attribute>
+        <xsl:attribute name="text-indent">-<xsl:value-of select="$index.indent"/> * 2</xsl:attribute>
+        <xsl:attribute name="font-size">9pt</xsl:attribute>
+    </xsl:attribute-set>
+    
+    <xsl:attribute-set name="index.entry__content">
+        <xsl:attribute name="start-indent" select="$index.indent"/>
+    </xsl:attribute-set>
+
+  <xsl:attribute-set name="index.see-also-entry__content" use-attribute-sets="index.entry__content">
+  </xsl:attribute-set>
+
+  <xsl:attribute-set name="index.see.label">
+    <xsl:attribute name="font-style">italic</xsl:attribute>
+  </xsl:attribute-set>
+  
+  <xsl:attribute-set name="index.see-also.label">
+    <xsl:attribute name="font-style">italic</xsl:attribute>
+  </xsl:attribute-set>
+
         <!--Common attributes for border-->
+        
     <xsl:attribute-set name="common.border_top">
         <xsl:attribute name="border-before-style">dotted</xsl:attribute>
         <xsl:attribute name="border-before-color">blue</xsl:attribute>

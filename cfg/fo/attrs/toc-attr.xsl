@@ -18,7 +18,7 @@
             </xsl:choose>
         </xsl:attribute>
         <xsl:attribute name="font-weight">normal</xsl:attribute>
-        <xsl:attribute name="font-size">17pt</xsl:attribute>
+        <xsl:attribute name="font-size">15pt</xsl:attribute>
 		<xsl:attribute name="padding-top">3pt</xsl:attribute>
 	    <!-- <xsl:attribute name="background-color">purple</xsl:attribute> -->
         <xsl:attribute name="start-indent">70pt</xsl:attribute>
@@ -32,7 +32,7 @@
     <xsl:attribute-set name="__toc__header" use-attribute-sets="common.title">
         <xsl:attribute name="color">blue</xsl:attribute>
         <!-- <xsl:attribute name="background-image">url(Customization/OpenTopic/common/artwork/plain.jpg)</xsl:attribute> -->
-        <xsl:attribute name="font-size">45pt</xsl:attribute>
+        <xsl:attribute name="font-size">35pt</xsl:attribute>
          <xsl:attribute name="padding-left">10pt</xsl:attribute>
         <xsl:attribute name="font-weight">50px</xsl:attribute>
     </xsl:attribute-set>
@@ -40,7 +40,7 @@
     <!--Chapter title-->
     <xsl:attribute-set name="__toc__chapter__content" use-attribute-sets="__toc__topic__content common.border_bottom common.border_top">
         <xsl:attribute name="font-weight">normal</xsl:attribute>
-        <xsl:attribute name="font-size">20pt</xsl:attribute>
+        <xsl:attribute name="font-size">17pt</xsl:attribute>
         <xsl:attribute name="text-align">center</xsl:attribute>
         <xsl:attribute name="start-indent">20pt</xsl:attribute>
         <xsl:attribute name="color"><xsl:value-of select="$custom_blue_color"/></xsl:attribute>

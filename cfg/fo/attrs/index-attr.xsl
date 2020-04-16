@@ -3,25 +3,25 @@
                 version="2.0">
 
          <xsl:attribute-set name="__index__label">
-                <xsl:attribute name="font-size">2.7em</xsl:attribute>
+                <xsl:attribute name="font-size">20pt</xsl:attribute>
                 <xsl:attribute name="font-weight">bold</xsl:attribute>
                 <xsl:attribute name='color'>blue</xsl:attribute>
-                <xsl:attribute name="font-family">Serif</xsl:attribute>
+                <xsl:attribute name="font-family">sans-serif</xsl:attribute>
                 <xsl:attribute name="letter-spacing">0.5pt</xsl:attribute>
         </xsl:attribute-set>
 
-        <xsl:attribute-set name="__index__letter-group" use-attribute-sets="common.border_top common.border_bottom">
-            <xsl:attribute name="font-size">1.7em</xsl:attribute>        
+        <xsl:attribute-set name="__index__letter-group" use-attribute-sets="border_top border_bottom">
+            <xsl:attribute name="font-size">1.7em</xsl:attribute>
+            <xsl:attribute name="padding-top">4pt</xsl:attribute>    
             <xsl:attribute name="color">blue</xsl:attribute>
         </xsl:attribute-set>
 
         <!-- FIXME: Incorrectly named, should be index.group -->
     <xsl:attribute-set name="index.entry">
-        <xsl:attribute name="space-after">14pt</xsl:attribute>
         <xsl:attribute name="font-size">13pt</xsl:attribute>
     </xsl:attribute-set>
   
-    <xsl:attribute-set name="index.term">
+    <!-- <xsl:attribute-set name="index.term">
     </xsl:attribute-set>
 
   <xsl:variable name="index.indent" select="'18pt'"/>
@@ -47,34 +47,32 @@
   
   <xsl:attribute-set name="index.see-also.label">
     <xsl:attribute name="font-style">italic</xsl:attribute>
-  </xsl:attribute-set>
+  </xsl:attribute-set> -->
 
         <!--Common attributes for border-->
         
-    <xsl:attribute-set name="common.border_top">
+    <xsl:attribute-set name="border_top">
         <xsl:attribute name="border-before-style">dotted</xsl:attribute>
         <xsl:attribute name="border-before-color">blue</xsl:attribute>
         <xsl:attribute name="border-before-width">2pt</xsl:attribute>
-        <xsl:attribute name="margin-top">15pt</xsl:attribute>
         <xsl:attribute name="border-start-indent">1pt</xsl:attribute>
         <xsl:attribute name="border-end-indent">1pt</xsl:attribute>
     </xsl:attribute-set>
 
-    <xsl:attribute-set name="common.border_bottom">
+    <xsl:attribute-set name="border_bottom">
         <xsl:attribute name="border-after-style">dotted</xsl:attribute>
         <xsl:attribute name="border-after-color">blue</xsl:attribute>
-        <xsl:attribute name="margin-bottom">5pt</xsl:attribute>
         <xsl:attribute name="border-after-width">2pt</xsl:attribute>
         <xsl:attribute name="border-start-indent">1pt</xsl:attribute>
         <xsl:attribute name="border-end-indent">1pt</xsl:attribute>
     </xsl:attribute-set>
 
-    <xsl:attribute-set name="common.border_left">
+    <xsl:attribute-set name="border_left">
         <xsl:attribute name="border-start-style">dotted</xsl:attribute>
         <xsl:attribute name="border-start-width">2pt</xsl:attribute>
     </xsl:attribute-set>
 
-    <xsl:attribute-set name="common.border_right">
+    <xsl:attribute-set name="border_right">
         <xsl:attribute name="border-end-style">dotted</xsl:attribute>
         <xsl:attribute name="border-end-width">2pt</xsl:attribute>
     </xsl:attribute-set>

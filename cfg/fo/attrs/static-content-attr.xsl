@@ -6,7 +6,7 @@
     <xsl:attribute name="font-weight">bold</xsl:attribute>
     <xsl:attribute name="color">blue</xsl:attribute>
 </xsl:attribute-set>
-
+    
 <xsl:attribute-set name="pdf2.ug__frontmatter__pagenumber__style">
     <!-- <xsl:attribute name="padding">10mm 5mm</xsl:attribute> -->
 	<xsl:attribute name="color">black</xsl:attribute>

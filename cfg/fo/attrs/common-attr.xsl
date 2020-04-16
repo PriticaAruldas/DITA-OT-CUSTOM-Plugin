@@ -38,7 +38,6 @@
         <xsl:attribute name="force-page-count">auto</xsl:attribute>
     </xsl:attribute-set>
 	
-	
 	<!-- 
 		Set topic, topic.topic, topic.topic.topic - title style
 	-->
@@ -92,12 +91,42 @@
     </xsl:attribute-set>
 
     <!--Style for notices-->
-    <xsl:attribute-set name="page-sequence.notice" use-attribute-sets="__force__page__count page-sequence.frontmatter"> 
-    </xsl:attribute-set>
+    <xsl:attribute-set name="page-sequence.notice" use-attribute-sets="__force__page__count page-sequence.frontmatter">
+  </xsl:attribute-set>
+    
+  <xsl:attribute-set name="page-sequence.backmatter.notice" use-attribute-sets="__force__page__count">
+    <xsl:attribute name="format">1</xsl:attribute>
+  </xsl:attribute-set>
+  
+  <xsl:attribute-set name="page-sequence.preface" use-attribute-sets="__force__page__count page-sequence.frontmatter">
+  </xsl:attribute-set>
 
-    <xsl:attribute-set name="page-sequence.backmatter.notice" use-attribute-sets="__force__page__count">
-        <xsl:attribute name="format">1</xsl:attribute>
-    </xsl:attribute-set>
+  <xsl:attribute-set name="page-sequence.toc" use-attribute-sets="__force__page__count page-sequence.frontmatter">
+  </xsl:attribute-set>
+
+  <xsl:attribute-set name="page-sequence.lot" use-attribute-sets="page-sequence.toc">
+  </xsl:attribute-set>
+  
+  <xsl:attribute-set name="page-sequence.lof" use-attribute-sets="page-sequence.toc">
+  </xsl:attribute-set>
+  
+  <xsl:attribute-set name="page-sequence.body" use-attribute-sets="__force__page__count">
+  </xsl:attribute-set>
+  
+  <xsl:attribute-set name="page-sequence.part" use-attribute-sets="__force__page__count">
+  </xsl:attribute-set>
+  
+  <xsl:attribute-set name="page-sequence.appendix" use-attribute-sets="__force__page__count">
+  </xsl:attribute-set>
+  
+  <xsl:attribute-set name="page-sequence.glossary" use-attribute-sets="__force__page__count">
+  </xsl:attribute-set>
+  
+  <xsl:attribute-set name="page-sequence.index" use-attribute-sets="__force__page__count">
+  </xsl:attribute-set>
+
+
+
 
 
     <!--Common Borders-->

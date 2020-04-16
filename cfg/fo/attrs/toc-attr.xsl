@@ -20,20 +20,15 @@
         <xsl:attribute name="font-weight">normal</xsl:attribute>
         <xsl:attribute name="font-size">15pt</xsl:attribute>
 		<xsl:attribute name="padding-top">3pt</xsl:attribute>
-	    <!-- <xsl:attribute name="background-color">purple</xsl:attribute> -->
-        <xsl:attribute name="start-indent">70pt</xsl:attribute>
-        <xsl:attribute name="margin-left">15pt</xsl:attribute>
-        <xsl:attribute name="end-indent">2pt</xsl:attribute>
-        <xsl:attribute name="text-align">center</xsl:attribute>
+        <xsl:attribute name="start-indent">16pt</xsl:attribute>
+        <!-- <xsl:attribute name="text-align">left</xsl:attribute> -->
         <xsl:attribute name="padding-bottom">3pt</xsl:attribute>
     </xsl:attribute-set>
 
         <!--Header of contents page-->
     <xsl:attribute-set name="__toc__header" use-attribute-sets="common.title">
         <xsl:attribute name="color">blue</xsl:attribute>
-        <!-- <xsl:attribute name="background-image">url(Customization/OpenTopic/common/artwork/plain.jpg)</xsl:attribute> -->
         <xsl:attribute name="font-size">35pt</xsl:attribute>
-         <xsl:attribute name="padding-left">10pt</xsl:attribute>
         <xsl:attribute name="font-weight">50px</xsl:attribute>
     </xsl:attribute-set>
     
@@ -45,8 +40,8 @@
         <xsl:attribute name="start-indent">20pt</xsl:attribute>
         <xsl:attribute name="color"><xsl:value-of select="$custom_blue_color"/></xsl:attribute>
         <xsl:attribute name="padding-top">3pt</xsl:attribute>
-        <xsl:attribute name="margin-left">5pt</xsl:attribute>
-        <xsl:attribute name="padding-left">15pt</xsl:attribute>
+        <!-- <xsl:attribute name="margin-left">5pt</xsl:attribute>
+        <xsl:attribute name="padding-left">15pt</xsl:attribute> -->
 		<xsl:attribute name="padding-bottom">3pt</xsl:attribute>
     </xsl:attribute-set>
 
@@ -108,6 +103,8 @@
         <xsl:attribute name="border-before-color">blue</xsl:attribute>
         <xsl:attribute name="border-before-width">2pt</xsl:attribute>
         <xsl:attribute name="margin-top">15pt</xsl:attribute>
+        <xsl:attribute name="padding-left">17pt</xsl:attribute>
+        <xsl:attribute name="padding-right">22pt</xsl:attribute>
         <xsl:attribute name="border-start-indent">1pt</xsl:attribute>
         <xsl:attribute name="border-end-indent">1pt</xsl:attribute>
     </xsl:attribute-set>
@@ -116,6 +113,8 @@
         <xsl:attribute name="border-after-style">dotted</xsl:attribute>
         <xsl:attribute name="border-after-color">blue</xsl:attribute>
         <xsl:attribute name="margin-bottom">5pt</xsl:attribute>
+        <xsl:attribute name="padding-left">17pt</xsl:attribute>
+        <xsl:attribute name="padding-right">22pt</xsl:attribute>
         <xsl:attribute name="border-after-width">2pt</xsl:attribute>
         <xsl:attribute name="border-start-indent">1pt</xsl:attribute>
         <xsl:attribute name="border-end-indent">1pt</xsl:attribute>

@@ -156,37 +156,37 @@
         TOC header
     -->
     <xsl:template name="insertTocOddHeader">
-    <fo:static-content flow-name="odd-toc-header">
+    <!-- <fo:static-content flow-name="odd-toc-header">
             <xsl:call-template name="insertHeaderContent">
-                <xsl:with-param name="addChapterTitle" select="true()"/>
+                <xsl:with-param name="addChapterTitle" select="false()"/>
             </xsl:call-template>
-        </fo:static-content>
+        </fo:static-content> -->
     </xsl:template>
 
     <xsl:template name="insertTocEvenHeader">
-        <fo:static-content flow-name="even-toc-header">
+        <!-- <fo:static-content flow-name="even-toc-header">
             <xsl:call-template name="insertHeaderContent">
-                <xsl:with-param name="addChapterTitle" select="true()"/>
+                <xsl:with-param name="addChapterTitle" select="false()"/>
             </xsl:call-template>
-        </fo:static-content>
+        </fo:static-content> -->
     </xsl:template>
     <!--
         TOC footer
     -->
     <xsl:template name="insertTocOddFooter">
-        <fo:static-content flow-name="odd-toc-footer">
+        <!-- <fo:static-content flow-name="odd-toc-footer">
             <xsl:call-template name="insertFooterContent">
                 <xsl:with-param name="addChapterTitle" select="false()"/>
             </xsl:call-template>
-        </fo:static-content>
+        </fo:static-content> -->
     </xsl:template>
 
     <xsl:template name="insertTocEvenFooter">
-        <fo:static-content flow-name="even-toc-footer">
+        <!-- <fo:static-content flow-name="even-toc-footer">
             <xsl:call-template name="insertFooterContent">
                 <xsl:with-param name="addChapterTitle" select="false()"/>
             </xsl:call-template>
-        </fo:static-content>
+        </fo:static-content> -->
     </xsl:template>
 
     <!-- Index footer and header -->

@@ -5,6 +5,20 @@
     exclude-result-prefixes="xs"
     version="2.0">
     
+    <!-- Move figure title to top and description to bottom -->
+  <xsl:template match="*[contains(@class,' topic/fig ')]">
+    <fo:block xsl:use-attribute-sets="image">
+      <xsl:call-template name="commonattributes"/>
+      <xsl:if test="not(@id)">
+        <xsl:attribute name="id">
+          <xsl:call-template name="get-id"/>
+        </xsl:attribute>
+      </xsl:if>
+      <xsl:apply-templates select="*[contains(@class,' topic/title ')]"/>
+      <xsl:apply-templates select="*[not(contains(@class,' topic/title ') or contains(@class,' topic/desc '))]"/>
+      <xsl:apply-templates select="*[contains(@class,' topic/desc ')]"/>
+    </fo:block>
+  </xsl:template>
     <!-- 
         Select the layout of the top level DITA map components like as
         chapter, appendix, notices. 

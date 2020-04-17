@@ -7,6 +7,27 @@
 <xsl:variable name="custom_blue_color">blue</xsl:variable>
 <xsl:variable name="default-font-size">13pt</xsl:variable>
 
+<!--image-->
+<xsl:attribute-set name="image">
+		<xsl:attribute name="content-width">scale-to-fit</xsl:attribute>
+		<xsl:attribute name="content-height">70%</xsl:attribute>
+		<xsl:attribute name="width">100%</xsl:attribute>
+		<xsl:attribute name="scaling">uniform</xsl:attribute>
+		<xsl:attribute name="text-align">left</xsl:attribute>
+		<xsl:attribute name="keep-with-previous.within-page">always</xsl:attribute>
+</xsl:attribute-set>
+
+<!-- image title -->
+<xsl:attribute-set name="fig.title" use-attribute-sets="base-font common.title">
+        <xsl:attribute name="font-weight">normal</xsl:attribute>
+		<xsl:attribute name="font-size">12pt</xsl:attribute>
+		<xsl:attribute name="color">black</xsl:attribute>
+        <xsl:attribute name="space-before">5pt</xsl:attribute>
+        <xsl:attribute name="space-after">10pt</xsl:attribute>
+		<xsl:attribute name="text-align">left</xsl:attribute>
+        <xsl:attribute name="keep-with-previous.within-page">always</xsl:attribute>
+</xsl:attribute-set>
+
     <xsl:attribute-set name="pdf2.ug.chapter.name.and.number">
         <xsl:attribute name="space-before">0pt</xsl:attribute>
         <xsl:attribute name="space-after">16.8pt</xsl:attribute>
@@ -90,44 +111,27 @@
         <xsl:attribute name="writing-mode" select="$writing-mode"/>
     </xsl:attribute-set>
 
-    <!--Style for notices-->
-    <xsl:attribute-set name="page-sequence.notice" use-attribute-sets="__force__page__count page-sequence.frontmatter">
-  </xsl:attribute-set>
-    
-  <xsl:attribute-set name="page-sequence.backmatter.notice" use-attribute-sets="__force__page__count">
-    <xsl:attribute name="format">1</xsl:attribute>
-  </xsl:attribute-set>
-  
-  <xsl:attribute-set name="page-sequence.preface" use-attribute-sets="__force__page__count page-sequence.frontmatter">
-  </xsl:attribute-set>
+    <!--Style for Notices-->
+    <xsl:attribute-set name="note" use-attribute-sets="note_border__top note_border__bottom note_border__right note_border__left">
+		<xsl:attribute name="padding-top">5pt</xsl:attribute>
+		<xsl:attribute name="padding-bottom">5pt</xsl:attribute>
+        <xsl:attribute name="padding-right">5pt</xsl:attribute>
+		<xsl:attribute name="padding-left">5pt</xsl:attribute>
+        <xsl:attribute name="font-size">13pt</xsl:attribute>
+		<xsl:attribute name="background-color">#A1A1A3</xsl:attribute>
+    </xsl:attribute-set>
 
-  <xsl:attribute-set name="page-sequence.toc" use-attribute-sets="__force__page__count page-sequence.frontmatter">
-  </xsl:attribute-set>
+    <xsl:attribute-set name="note__label">
+        <xsl:attribute name="border-left-width">5pt</xsl:attribute>
+        <xsl:attribute name="border-right-width">5pt</xsl:attribute>
+		<xsl:attribute name="font-family">sans-serif</xsl:attribute>
+        <xsl:attribute name="font-size">13pt</xsl:attribute> 
+		<xsl:attribute name="font-weight">bold</xsl:attribute>	
+    </xsl:attribute-set>
 
-  <xsl:attribute-set name="page-sequence.lot" use-attribute-sets="page-sequence.toc">
-  </xsl:attribute-set>
-  
-  <xsl:attribute-set name="page-sequence.lof" use-attribute-sets="page-sequence.toc">
-  </xsl:attribute-set>
-  
-  <xsl:attribute-set name="page-sequence.body" use-attribute-sets="__force__page__count">
-  </xsl:attribute-set>
-  
-  <xsl:attribute-set name="page-sequence.part" use-attribute-sets="__force__page__count">
-  </xsl:attribute-set>
-  
-  <xsl:attribute-set name="page-sequence.appendix" use-attribute-sets="__force__page__count">
-  </xsl:attribute-set>
-  
-  <xsl:attribute-set name="page-sequence.glossary" use-attribute-sets="__force__page__count">
-  </xsl:attribute-set>
-  
-  <xsl:attribute-set name="page-sequence.index" use-attribute-sets="__force__page__count">
-  </xsl:attribute-set>
-
-
-
-
+        <xsl:attribute-set name="note__image__entry">
+                <!-- <xsl:attribute name='src'>url(Customization/OpenTopic/common/artwork/note_img.jpeg)</xsl:attribute> -->
+        </xsl:attribute-set>
 
     <!--Common Borders-->
 	<xsl:attribute-set name="common.border__top ">
@@ -153,6 +157,32 @@
 		<xsl:attribute name="border-start-style">solid</xsl:attribute>
 		<xsl:attribute name="border-start-width">1pt</xsl:attribute>
 		<!-- <xsl:attribute name="border-start-color" select="$custom_blue_color"/> -->
+	</xsl:attribute-set>
+
+
+    <!--Border for Notices-->
+    <xsl:attribute-set name="note_border__top ">
+		<xsl:attribute name="border-before-style">double</xsl:attribute>
+		<xsl:attribute name="border-before-width">4pt</xsl:attribute>
+        <xsl:attribute name="border-before-color">black</xsl:attribute>
+	</xsl:attribute-set>
+
+	<xsl:attribute-set name="note_border__bottom">
+		<xsl:attribute name="border-after-style">double</xsl:attribute>
+		<xsl:attribute name="border-after-width">4pt</xsl:attribute>
+        <xsl:attribute name="border-after-color">black</xsl:attribute>
+	</xsl:attribute-set>
+
+	<xsl:attribute-set name="note_border__right">
+		<xsl:attribute name="border-end-style">double</xsl:attribute>
+		<xsl:attribute name="border-end-width">4pt</xsl:attribute>
+        <xsl:attribute name="border-end-color">black</xsl:attribute>
+	</xsl:attribute-set>
+
+	<xsl:attribute-set name="note_border__left">
+		<xsl:attribute name="border-start-style">double</xsl:attribute>
+		<xsl:attribute name="border-start-width">4pt</xsl:attribute>
+        <xsl:attribute name="border-start-color">black</xsl:attribute>
 	</xsl:attribute-set>
 	
     <!--Borders for Topics Subtopics-->

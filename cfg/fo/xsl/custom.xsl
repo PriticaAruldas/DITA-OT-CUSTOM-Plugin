@@ -13,21 +13,6 @@
   <xsl:import href="list.xsl"/>
   <xsl:import href="table.xsl"/>
   
-  <!-- Move figure title to top and description to bottom -->
-  <xsl:template match="*[contains(@class,' topic/fig ')]">
-    <fo:block xsl:use-attribute-sets="fig">
-      <xsl:call-template name="commonattributes"/>
-      <xsl:if test="not(@id)">
-        <xsl:attribute name="id">
-          <xsl:call-template name="get-id"/>
-        </xsl:attribute>
-      </xsl:if>
-      <xsl:apply-templates select="*[contains(@class,' topic/title ')]"/>
-      <xsl:apply-templates select="*[not(contains(@class,' topic/title ') or contains(@class,' topic/desc '))]"/>
-      <xsl:apply-templates select="*[contains(@class,' topic/desc ')]"/>
-    </fo:block>
-  </xsl:template>
-  
   <xsl:template name="createFrontCoverContents">
 
 	 <fo:block-container xsl:use-attribute-sets='__frontmatter__logo__container'>

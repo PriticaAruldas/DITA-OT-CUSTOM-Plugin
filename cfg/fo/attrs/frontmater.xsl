@@ -3,14 +3,14 @@
                 version="2.0">
 <!--Frontmatter Title-->
 <xsl:attribute-set name="common.title">
-<xsl:attribute name="font-family">Serif</xsl:attribute>
+<xsl:attribute name="font-family">sans-serif</xsl:attribute>
 </xsl:attribute-set>
 
 <xsl:attribute-set name="__frontmatter__title" use-attribute-sets="common.title">
         <xsl:attribute name="space-before">100mm</xsl:attribute>
         <xsl:attribute name="font-size">45pt</xsl:attribute>
         <xsl:attribute name="font-weight">bolder</xsl:attribute>    
-		<xsl:attribute name="font-family">Serif</xsl:attribute>
+		<xsl:attribute name="font-family">sans-serif</xsl:attribute>
         <xsl:attribute name="color">white</xsl:attribute>
 </xsl:attribute-set>
 

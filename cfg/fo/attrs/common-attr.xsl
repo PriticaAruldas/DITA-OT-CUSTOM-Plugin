@@ -118,7 +118,7 @@
         <xsl:attribute name="padding-right">5pt</xsl:attribute>
 		<xsl:attribute name="padding-left">5pt</xsl:attribute>
         <xsl:attribute name="font-size">13pt</xsl:attribute>
-		<xsl:attribute name="background-color">#A1A1A3</xsl:attribute>
+		<xsl:attribute name="background-color">#C0C0C0</xsl:attribute>
     </xsl:attribute-set>
 
     <xsl:attribute-set name="note__label">

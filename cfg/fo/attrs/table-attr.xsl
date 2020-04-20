@@ -12,7 +12,7 @@
     <xsl:attribute name='font-size'>15pt</xsl:attribute>
 </xsl:attribute-set>
 
-<xsl:attribute-set name="common.table.body.entry">
+  <xsl:attribute-set name="common.table.body.entry">
     <xsl:attribute name="space-before">2pt</xsl:attribute>
     <xsl:attribute name="space-before.conditionality">retain</xsl:attribute>
     <xsl:attribute name="space-after">2pt</xsl:attribute>
@@ -28,16 +28,16 @@
 
  <!--Head row-->
 <xsl:attribute-set name="thead.row">	
-	<xsl:attribute name="background-color">#66ff66</xsl:attribute>
+	<xsl:attribute name="background-color">#0B20CE</xsl:attribute>
   <xsl:attribute name="font-family">sans-serif</xsl:attribute>  
 </xsl:attribute-set>
 
 <!--Table body row-->
-<xsl:attribute-set name="tbody.row">
+<xsl:attribute-set name="tbody.row" use-attribute-sets="table__tableframe__bottom">
      
      <xsl:attribute name="keep-together.within-page">always</xsl:attribute>
      <xsl:attribute name="font-family">sans-serif</xsl:attribute>
-     <xsl:attribute name="background-color">#DADEDA</xsl:attribute>
+     <!-- <xsl:attribute name="background-color">#DADEDA</xsl:attribute> -->
 </xsl:attribute-set>
 
 <xsl:attribute-set name='table__tableframe__all' use-attribute-sets='table__tableframe__topbot table__tableframe__sides'>
@@ -51,6 +51,12 @@
 		<xsl:attribute name='border-before-color'>black</xsl:attribute>
 		<xsl:attribute name='border-before-width'>0pt</xsl:attribute>
 </xsl:attribute-set>
+
+  <xsl:attribute-set name="table__tableframe__bottom" use-attribute-sets="common.border__bottom">
+    <xsl:attribute name="border-after-style">solid</xsl:attribute>
+    <xsl:attribute name="border-after-width">2pt</xsl:attribute>
+    <xsl:attribute name="border-after-color">#C9CACD</xsl:attribute>
+  </xsl:attribute-set>
 
   <xsl:attribute-set name="__tableframe__left" use-attribute-sets="common.border__left">
      <xsl:attribute name="border-start-style">solid</xsl:attribute>
@@ -109,9 +115,9 @@
 
 <!--Style for Dl dt which contains term for element-->
 
-  <xsl:attribute-set name="dlentry.dt"  >
+  <xsl:attribute-set name="dlentry.dt" use-attribute-sets="common.border__bottom">
     <xsl:attribute name="relative-align">baseline</xsl:attribute>
-    <xsl:attribute name="background-color">#DADEDA</xsl:attribute>
+    <!-- <xsl:attribute name="background-color">#DADEDA</xsl:attribute> -->
   </xsl:attribute-set>
 
   <xsl:attribute-set name="dlentry.dt__content">
@@ -122,11 +128,11 @@
   </xsl:attribute-set>
 
 <!--Style for dd. Contains description of the term in list-->
-  <xsl:attribute-set name="dlentry.dd" >
+  <xsl:attribute-set name="dlentry.dd" use-attribute-sets="common.border__bottom">
     <xsl:attribute name="keep-together.within-page">always</xsl:attribute>
      <xsl:attribute name="font-family">sans-serif</xsl:attribute>
      <xsl:attribute name="text-align">left</xsl:attribute>
-     <xsl:attribute name="background-color">#DADEDA</xsl:attribute>
+     <!-- <xsl:attribute name="background-color">#DADEDA</xsl:attribute> -->
   </xsl:attribute-set>
 
 

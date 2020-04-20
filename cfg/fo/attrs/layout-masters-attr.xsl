@@ -8,7 +8,7 @@
         <!-- <xsl:attribute name="background-image">url(Customization/OpenTopic/common/artwork/image4.jpg)</xsl:attribute>
         <xsl:attribute name="background-position-vertical">350px 350px</xsl:attribute>
         <xsl:attribute name="background-position-horizontal">200px 200px</xsl:attribute>  -->
-        <xsl:attribute name="background-color">#3C5BF9</xsl:attribute>
+        <xsl:attribute name="background-color">#4858E0</xsl:attribute>
         <xsl:attribute name="background-position">150px 150px</xsl:attribute>
 
         

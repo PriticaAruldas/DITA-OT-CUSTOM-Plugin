@@ -29,7 +29,7 @@
  <!--Head row-->
 <xsl:attribute-set name="thead.row">	
 	<xsl:attribute name="background-color">#89B043</xsl:attribute>
-  <xsl:attribute name="font-family">arial</xsl:attribute>  
+  <xsl:attribute name="font-family">monaco</xsl:attribute>  
 </xsl:attribute-set>
 
 <!--Table body row-->

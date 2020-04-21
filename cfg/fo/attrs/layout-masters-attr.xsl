@@ -8,7 +8,7 @@
         <!-- <xsl:attribute name="background-image">url(Customization/OpenTopic/common/artwork/image4.jpg)</xsl:attribute>
         <xsl:attribute name="background-position-vertical">350px 350px</xsl:attribute>
         <xsl:attribute name="background-position-horizontal">200px 200px</xsl:attribute>  -->
-        <xsl:attribute name="background-color">#D3D3D3</xsl:attribute>
+        <xsl:attribute name="background-color">#ECECEB</xsl:attribute>
         <xsl:attribute name="background-position">150px 150px</xsl:attribute>
 
         
@@ -25,4 +25,5 @@
         <xsl:attribute name="{if ($writing-mode = 'lr') then 'margin-left' else 'margin-right'}">0mm</xsl:attribute>
         <xsl:attribute name="{if ($writing-mode = 'lr') then 'margin-right' else 'margin-left'}">0mm</xsl:attribute>
     </xsl:attribute-set>
+    
 </xsl:stylesheet>

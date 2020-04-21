@@ -16,6 +16,11 @@
   <xsl:variable name="page-height">297mm</xsl:variable>
   <xsl:variable name="mirror-page-margins" select="true()"/>
 
+  <xsl:variable name="generate-back-cover" select="true()"/>
+
+  <!-- this variable used for authorinformation-->
+    <xsl:variable name="pdfbase_authorinformation" select="$map/*[contains(@class, ' bookmap/bookmeta ')]/*[contains(@class, ' xnal-d/authorinformation ')]" as="element()*"/>
+
   <!--custom color-->
   <xsl:variable name="custom_green_color">#89B043</xsl:variable>
   

@@ -6,7 +6,7 @@
                 <xsl:attribute name="font-size">25pt</xsl:attribute>
                 <xsl:attribute name="font-weight">bold</xsl:attribute>
                 <xsl:attribute name='color'><xsl:value-of select="$custom_green_color"/></xsl:attribute>
-                <xsl:attribute name="font-family">arial</xsl:attribute>
+                <xsl:attribute name="font-family">monaco</xsl:attribute>
                 <xsl:attribute name="letter-spacing">0.5pt</xsl:attribute>
         </xsl:attribute-set>
 

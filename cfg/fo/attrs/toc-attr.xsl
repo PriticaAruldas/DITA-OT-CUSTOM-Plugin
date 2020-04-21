@@ -4,7 +4,6 @@
     xmlns:fox="http://xmlgraphics.apache.org/fop/extensions"
  version="2.0">
 
-
     <xsl:attribute-set name="__toc__topic__content" >
         <xsl:attribute name="color">
             <xsl:variable name="level" select="count(ancestor-or-self::*[contains(@class, ' topic/topic ')])"/>
@@ -18,7 +17,6 @@
         <xsl:attribute name="font-family">monaco</xsl:attribute>
 		<xsl:attribute name="padding-top">3pt</xsl:attribute>
         <xsl:attribute name="start-indent">16pt</xsl:attribute>
-        <!-- <xsl:attribute name="text-align">left</xsl:attribute> -->
         <xsl:attribute name="padding-bottom">3pt</xsl:attribute>
     </xsl:attribute-set>
 
@@ -26,7 +24,7 @@
     <xsl:attribute-set name="__toc__header" use-attribute-sets="common.title">
         <xsl:attribute name="color"><xsl:value-of select="$custom_green_color"/></xsl:attribute>
         <xsl:attribute name="font-size">35pt</xsl:attribute>
-        <xsl:attribute name="font-family">arial</xsl:attribute>
+        <xsl:attribute name="font-family">monaco</xsl:attribute>
         <xsl:attribute name="font-weight">50px</xsl:attribute>
     </xsl:attribute-set>
     
@@ -38,7 +36,7 @@
         <xsl:attribute name="start-indent">20pt</xsl:attribute>
         <xsl:attribute name="color"><xsl:value-of select="$custom_green_color"/></xsl:attribute>
         <xsl:attribute name="padding-top">3pt</xsl:attribute>
-        <xsl:attribute name="font-family">palatino</xsl:attribute>
+        <xsl:attribute name="font-family">monaco</xsl:attribute>
 		<xsl:attribute name="padding-bottom">3pt</xsl:attribute>
     </xsl:attribute-set>
 
@@ -90,7 +88,7 @@
     -->
     <xsl:attribute-set name="pdf2.ug__toc__mini" use-attribute-sets="__toc__mini">
         <xsl:attribute name="font-size">10.5pt</xsl:attribute>
-        <xsl:attribute name="font-family">simple</xsl:attribute>
+        <xsl:attribute name="font-family">monaco</xsl:attribute>
         <xsl:attribute name="end-indent">5pt</xsl:attribute>
     </xsl:attribute-set>
 

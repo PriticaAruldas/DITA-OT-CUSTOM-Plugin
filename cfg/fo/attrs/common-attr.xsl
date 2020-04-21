@@ -38,7 +38,7 @@
     -->
     <xsl:attribute-set name="pdf2.ug.topic.title" use-attribute-sets="common.title">
         <xsl:attribute name="font-size">25pt</xsl:attribute>
-        <xsl:attribute name="font-family">arial</xsl:attribute>
+        <xsl:attribute name="font-family">monaco</xsl:attribute>
         <xsl:attribute name="font-weight">bold</xsl:attribute>
         <xsl:attribute name="keep-with-next.within-column">always</xsl:attribute>
         <xsl:attribute name="color" select="$custom_green_color"/>

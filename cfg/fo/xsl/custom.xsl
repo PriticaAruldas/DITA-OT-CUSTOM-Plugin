@@ -12,6 +12,7 @@
   <xsl:import href="list.xsl"/>
   <xsl:import href="table.xsl"/>
   <xsl:import href="backmatter.xsl"/>
+
   
   <xsl:template name="createFrontCoverContents">
 
@@ -39,9 +40,12 @@
       </xsl:choose>
     </fo:block>
     <!-- set the subtitle -->
-    <xsl:apply-templates select="$map//*[contains(@class,' bookmap/booktitlealt ')]"/>
+    <fo:block xsl:use-attribute-sets="__frontmatter__subtitle">
+        <xsl:apply-templates select="$map//*[contains(@class,' bookmap/booktitlealt ')]"/>
+    </fo:block>
     <fo:block xsl:use-attribute-sets="__frontmatter__owner">
       <xsl:apply-templates select="$map//*[contains(@class,' bookmap/bookmeta ')]"/>
     </fo:block>
   </xsl:template>
+
 </xsl:stylesheet>

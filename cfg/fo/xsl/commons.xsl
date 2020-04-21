@@ -195,11 +195,11 @@
                                                 </xsl:for-each>
                                             </fo:block>
                                         </fo:table-cell>
-                                        <fo:table-cell display-align="center" text-align="right">
+                                        <!-- <fo:table-cell display-align="center" text-align="right">
                                             <xsl:apply-templates select="." mode="insertChapterFirstpageStaticContent">
                                                 <xsl:with-param name="type" select="'chapter'"/>
                                             </xsl:apply-templates>
-                                        </fo:table-cell>
+                                        </fo:table-cell> -->
                                     </fo:table-row>
                                 </fo:table-body>
                             </fo:table>

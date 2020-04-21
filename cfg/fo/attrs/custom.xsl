@@ -16,6 +16,10 @@
   <xsl:variable name="page-height">297mm</xsl:variable>
   <xsl:variable name="mirror-page-margins" select="true()"/>
 
+  <!--custom color-->
+  <xsl:variable name="custom_green_color">#89B043</xsl:variable>
+  
+
   <xsl:attribute-set name="__chapter__frontmatter__number__container">
         <!-- PLUGIN PATCH START EXM-18943 -->
         <xsl:attribute name="font-size">30pt</xsl:attribute>

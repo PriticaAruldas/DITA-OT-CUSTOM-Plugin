@@ -28,15 +28,15 @@
 
  <!--Head row-->
 <xsl:attribute-set name="thead.row">	
-	<xsl:attribute name="background-color">#0B20CE</xsl:attribute>
-  <xsl:attribute name="font-family">sans-serif</xsl:attribute>  
+	<xsl:attribute name="background-color">#89B043</xsl:attribute>
+  <xsl:attribute name="font-family">arial</xsl:attribute>  
 </xsl:attribute-set>
 
 <!--Table body row-->
 <xsl:attribute-set name="tbody.row" use-attribute-sets="table__tableframe__bottom">
      
      <xsl:attribute name="keep-together.within-page">always</xsl:attribute>
-     <xsl:attribute name="font-family">sans-serif</xsl:attribute>
+     <xsl:attribute name="font-family">monaco</xsl:attribute>
      <!-- <xsl:attribute name="background-color">#DADEDA</xsl:attribute> -->
 </xsl:attribute-set>
 
@@ -91,7 +91,7 @@
 
 <!--********************************Style for Definition List*********************************-->
 <!--Table for Definition List-->
-  <xsl:attribute-set name="dl" >
+  <xsl:attribute-set name="dl" use-attribute-sets="table__tableframe__bottom">
     <!--DL is a table-->
     <xsl:attribute name="width">100%</xsl:attribute>
     <xsl:attribute name="space-before">5pt</xsl:attribute>
@@ -102,10 +102,10 @@
   <xsl:attribute-set name="dl__body">
     <!-- <xsl:attribute name='color'></xsl:attribute> -->
     <xsl:attribute name="font-size">13pt</xsl:attribute>
-    <xsl:attribute name="font-family">sans-serif</xsl:attribute>
+    <xsl:attribute name="font-family">monaco</xsl:attribute>
   </xsl:attribute-set>
 
-  <xsl:attribute-set name="dl.dlhead" >
+  <xsl:attribute-set name="dl.dlhead">
   </xsl:attribute-set>
 
   <!--Style for Contents for Entire DL-->
@@ -115,33 +115,34 @@
 
 <!--Style for Dl dt which contains term for element-->
 
-  <xsl:attribute-set name="dlentry.dt" use-attribute-sets="common.border__bottom">
+  <xsl:attribute-set name="dlentry.dt">
     <xsl:attribute name="relative-align">baseline</xsl:attribute>
     <!-- <xsl:attribute name="background-color">#DADEDA</xsl:attribute> -->
   </xsl:attribute-set>
 
-  <xsl:attribute-set name="dlentry.dt__content">
-    <xsl:attribute name='color'>blue</xsl:attribute>
+  <xsl:attribute-set name="dlentry.dt__content" use-attribute-sets="table__tableframe__bottom">
+    <xsl:attribute name='color'>#89B043</xsl:attribute>
     <xsl:attribute name="font-size">13pt</xsl:attribute>
     <xsl:attribute name="font-weight">bold</xsl:attribute>
-    <xsl:attribute name="font-family">sans-serif</xsl:attribute>
+    <xsl:attribute name="font-family">monaco</xsl:attribute>
+    <xsl:attribute name="padding-top">4pt</xsl:attribute>
+    <xsl:attribute name="background-color">#DADEDA</xsl:attribute>
   </xsl:attribute-set>
 
+
 <!--Style for dd. Contains description of the term in list-->
-  <xsl:attribute-set name="dlentry.dd" use-attribute-sets="common.border__bottom">
+  <xsl:attribute-set name="dlentry.dd">
     <xsl:attribute name="keep-together.within-page">always</xsl:attribute>
-     <xsl:attribute name="font-family">sans-serif</xsl:attribute>
-     <xsl:attribute name="text-align">left</xsl:attribute>
+     <xsl:attribute name="font-family">monaco</xsl:attribute>
+     <xsl:attribute name="text-align">center</xsl:attribute>
      <!-- <xsl:attribute name="background-color">#DADEDA</xsl:attribute> -->
   </xsl:attribute-set>
 
 
   <xsl:attribute-set name="dl.dlhead__row">
-    
   </xsl:attribute-set>
 
   <xsl:attribute-set name="dlhead.dthd__cell">
-  
   </xsl:attribute-set>
 
   <xsl:attribute-set name="dlhead.dthd__content" use-attribute-sets="common.table.body.entry common.table.head.entry">
@@ -167,7 +168,7 @@
      <xsl:attribute name="background-color">blue</xsl:attribute>
     <xsl:attribute name="font-size">13pt</xsl:attribute>
     <xsl:attribute name="font-weight">bold</xsl:attribute>
-    <xsl:attribute name="font-family">sans-serif</xsl:attribute>
+    <xsl:attribute name="font-family">monaco</xsl:attribute>
   </xsl:attribute-set>
 
   <xsl:attribute-set name="sthead">

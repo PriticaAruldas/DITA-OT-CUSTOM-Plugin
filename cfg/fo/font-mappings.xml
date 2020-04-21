@@ -50,11 +50,94 @@ See the accompanying LICENSE file for applicable license.
     <aliases>
       <alias name="Courier">Monospaced</alias>
     </aliases>
+<!--***********************************************************************************************-->
+<!--custom font-->
+    <aliases>
+      <alias name="palatino">palatino</alias>
+    </aliases>
     
+    <logical-font name="palatino">
+      <physical-font char-set="default">
+        <font-face>Palatino Linotype, Book Antiqua, Palatino, serif</font-face>
+      </physical-font>
+    </logical-font>
+
+    <aliases>
+      <alias name="Frutiger">Frutiger</alias>
+    </aliases>
+    
+    <logical-font name="Frutiger">
+      <physical-font char-set="default">
+        <font-face>Impact, Charcoal, sans-serif</font-face>
+      </physical-font>
+    </logical-font>
+
+  <aliases>
+      <alias name="Cursive">Cursive</alias>
+    </aliases>
+    
+    <logical-font name="Cursive">
+      <physical-font char-set="default">
+        <font-face>"Comic Sans MS", cursive, sans-serif</font-face>
+      </physical-font>
+    </logical-font>
+
+    <aliases>
+      <alias name="simple">simple</alias>
+    </aliases>
+    
+    <logical-font name="simple">
+      <physical-font char-set="default">
+        <font-face>Georgia, serif</font-face>
+      </physical-font>
+    </logical-font>
+
+    <aliases>
+      <alias name="block">block</alias>
+    </aliases>
+    
+    <logical-font name="block">
+      <physical-font char-set="default">
+        <font-face>"Trebuchet MS", Helvetica, sans-serif</font-face>
+      </physical-font>
+    </logical-font>
+
+    <aliases>
+      <alias name="monaco">monaco</alias>
+    </aliases>
+    
+    <logical-font name="monaco">
+      <physical-font char-set="default">
+        <font-face>Courier New, Courier, monospace</font-face>
+      </physical-font>
+    </logical-font>
+
+    <aliases>
+      <alias name="geneva">geneva</alias>
+    </aliases>
+    
+    <logical-font name="geneva">
+      <physical-font char-set="default">
+        <font-face>Verdana, Geneva, sans-serif</font-face>
+      </physical-font>
+    </logical-font>
+
+    <aliases>
+      <alias name="arial">arial</alias>
+    </aliases>
+    
+    <logical-font name="arial">
+      <physical-font char-set="default">
+        <font-face>"Arial Black", Gadget, sans-serif</font-face>
+      </physical-font>
+    </logical-font>
+
+<!--***********************************************************************************************-->
     <logical-font name="Sans">
       <physical-font char-set="default">
-        <font-face>Helvetica, Arial Unicode MS, Tahoma, Batang, SimSun</font-face>
+        <font-face>Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif</font-face>
       </physical-font>
+      
       <physical-font char-set="Simplified Chinese">
         <font-face>AdobeSongStd-Light, Arial Unicode MS, Batang, SimSun</font-face>
       </physical-font>

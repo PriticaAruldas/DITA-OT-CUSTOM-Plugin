@@ -29,15 +29,18 @@
     <xsl:attribute-set name="ul.li__label__content">
         <xsl:attribute name="text-align">start</xsl:attribute>
         <xsl:attribute name="font-size">15pt</xsl:attribute>
+        <xsl:attribute name="font-family">monaco</xsl:attribute>
     </xsl:attribute-set>
 
     <xsl:attribute-set name="ul.li__body">
         <xsl:attribute name="start-indent">body-start()</xsl:attribute>
         <xsl:attribute name="font-size">13pt</xsl:attribute>
+        
     </xsl:attribute-set>
 
     <xsl:attribute-set name="ul.li__content">
     <xsl:attribute name="font-size">13pt</xsl:attribute>
+    <xsl:attribute name="font-family">monaco</xsl:attribute>
     </xsl:attribute-set>
 
     <!--Ordered list-->
@@ -64,15 +67,18 @@
         <xsl:attribute name="text-align">start</xsl:attribute>
         <xsl:attribute name="font-weight">bold</xsl:attribute>
         <xsl:attribute name="font-size">13pt</xsl:attribute>
+        <xsl:attribute name="font-family">monaco</xsl:attribute>
     </xsl:attribute-set>
 
     <xsl:attribute-set name="ol.li__body">
         <xsl:attribute name="start-indent">body-start()</xsl:attribute>
         <xsl:attribute name="font-size">13pt</xsl:attribute>
+        <xsl:attribute name="font-family">monaco</xsl:attribute>
     </xsl:attribute-set>
 
     <xsl:attribute-set name="ol.li__content">
         <xsl:attribute name="font-size">13pt</xsl:attribute>
+        <xsl:attribute name="font-family">monaco</xsl:attribute>
     </xsl:attribute-set>
 
     <!--Simple list-->
@@ -95,15 +101,18 @@
     <xsl:attribute-set name="sl.sli__label__content">
         <xsl:attribute name="text-align">start</xsl:attribute>
         <xsl:attribute name="font-size">13pt</xsl:attribute>
+        <xsl:attribute name="font-family">monaco</xsl:attribute>
     </xsl:attribute-set>
 
     <xsl:attribute-set name="sl.sli__body">
         <xsl:attribute name="start-indent">body-start()</xsl:attribute>
         <xsl:attribute name="font-size">13pt</xsl:attribute>
+        <xsl:attribute name="font-family">monaco</xsl:attribute>
     </xsl:attribute-set>
 
     <xsl:attribute-set name="sl.sli__content">
         <xsl:attribute name="font-size">13pt</xsl:attribute>
+        <xsl:attribute name="font-family">monaco</xsl:attribute>
     </xsl:attribute-set>
 
 </xsl:stylesheet>

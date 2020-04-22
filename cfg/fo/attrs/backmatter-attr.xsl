@@ -7,9 +7,8 @@
 
 <!--Backmatter Logo Container-->
 <xsl:attribute-set name='__backmatter__logo__container'>
-                <!-- <xsl:attribute name='text-align'>center</xsl:attribute> -->
-                 <!-- <xsl:attribute name='margin-top'>75pt</xsl:attribute> -->
                 <xsl:attribute name="content-width">absolute</xsl:attribute>
+
         </xsl:attribute-set>
 
 <!--Backmatter Logo-->
@@ -18,17 +17,15 @@
                 <xsl:attribute name='width'>550px</xsl:attribute>
                 <xsl:attribute name='height'>550px</xsl:attribute>
                 <xsl:attribute name='scaling'>Uniform</xsl:attribute>
+                <xsl:attribute name='padding-left'>10pt</xsl:attribute>
+                <xsl:attribute name='padding-top'>10pt</xsl:attribute>
         </xsl:attribute-set>
 
 
          <!-- Backmatter Contents-->
         <xsl:attribute-set name="__backmatter__Contents" use-attribute-sets="common.title">
-                 <xsl:attribute name="color">black</xsl:attribute>
-                <xsl:attribute name="text-align">center</xsl:attribute>
-                <xsl:attribute name="font-size">20pt</xsl:attribute>
-                <xsl:attribute name="font-family">arial</xsl:attribute>
-                <xsl:attribute name="space-before">1pt</xsl:attribute>
-                <xsl:attribute name="space-after">1pt</xsl:attribute>
+                <xsl:attribute name="space-before">85mm</xsl:attribute>
+                <xsl:attribute name="space-before.conditionality">retain</xsl:attribute>
         </xsl:attribute-set>
 
         <xsl:attribute-set name="__backatter__owner__container">
@@ -45,21 +42,20 @@
         </xsl:attribute-set>
 
         <!-- Backmatter organization name -->
-        <!-- <xsl:attribute-set name="__backmatter__organizationname">
+        <xsl:attribute-set name="__backmatter__organizationname">
                 <xsl:attribute name="color">black</xsl:attribute>
                 <xsl:attribute name="text-align">center</xsl:attribute>
                 <xsl:attribute name="font-size">25pt</xsl:attribute>
                 <xsl:attribute name="font-family">arial</xsl:attribute>
-        </xsl:attribute-set>    -->
+                 <xsl:attribute name="padding-bottom">7pt</xsl:attribute>
+        </xsl:attribute-set>
 
         <!-- Backmatter address -->
-        <!-- <xsl:attribute-set name="__backmatter__address">
+        <xsl:attribute-set name="__backmatter__address">
                 <xsl:attribute name="text-align">center</xsl:attribute>
                 <xsl:attribute name="color">black</xsl:attribute>
-                <xsl:attribute name="font-size">25pt</xsl:attribute>
-        </xsl:attribute-set>  -->
-
-
-
+                <xsl:attribute name="font-size">20pt</xsl:attribute>
+                <xsl:attribute name="font-family">arial</xsl:attribute>
+        </xsl:attribute-set> 
 
 </xsl:stylesheet>

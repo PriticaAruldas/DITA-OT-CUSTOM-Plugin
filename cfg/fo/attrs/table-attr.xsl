@@ -10,16 +10,18 @@
 	<xsl:attribute name='text-align'>center</xsl:attribute>
 		<xsl:attribute name='color'>white</xsl:attribute>
     <xsl:attribute name='font-size'>15pt</xsl:attribute>
+    <xsl:attribute name="width">50%</xsl:attribute>
 </xsl:attribute-set>
 
   <xsl:attribute-set name="common.table.body.entry">
-    <xsl:attribute name="space-before">2pt</xsl:attribute>
+    <xsl:attribute name="width">100%</xsl:attribute>
+    <xsl:attribute name="space-before">3pt</xsl:attribute>
     <xsl:attribute name="space-before.conditionality">retain</xsl:attribute>
-    <xsl:attribute name="space-after">2pt</xsl:attribute>
+    <xsl:attribute name="space-after">3pt</xsl:attribute>
     <xsl:attribute name="space-after.conditionality">retain</xsl:attribute>
     <xsl:attribute name="start-indent">0pt</xsl:attribute>
     <xsl:attribute name="end-indent">4pt</xsl:attribute>
-    <xsl:attribute name="margin-right">35pt</xsl:attribute>
+    <xsl:attribute name="margin-right">37pt</xsl:attribute>
     <xsl:attribute name='text-align'>center</xsl:attribute>
 		<xsl:attribute name='color'>black</xsl:attribute>
     <xsl:attribute name='font-size'>13pt</xsl:attribute>
@@ -76,7 +78,7 @@
 
 <!--**************************************************************************************************************************************-->
 <xsl:attribute-set name="dl.dlhead">
-	<xsl:attribute name="text-align">center</xsl:attribute>
+	<xsl:attribute name="text-align">left</xsl:attribute>
 </xsl:attribute-set>
 
 <xsl:attribute-set name="simpletable" use-attribute-sets="base-font">
@@ -93,7 +95,7 @@
 <!--Table for Definition List-->
   <xsl:attribute-set name="dl" use-attribute-sets="table__tableframe__bottom">
     <!--DL is a table-->
-    <xsl:attribute name="width">100%</xsl:attribute>
+    <xsl:attribute name="text-align">center</xsl:attribute>
     <xsl:attribute name="space-before">5pt</xsl:attribute>
     <xsl:attribute name="space-after">5pt</xsl:attribute>
   </xsl:attribute-set>
@@ -101,6 +103,7 @@
 <!--Body for Definition List-->
   <xsl:attribute-set name="dl__body">
     <!-- <xsl:attribute name='color'></xsl:attribute> -->
+    <xsl:attribute name="text-align">center</xsl:attribute>
     <xsl:attribute name="font-size">13pt</xsl:attribute>
     <xsl:attribute name="font-family">monaco</xsl:attribute>
   </xsl:attribute-set>
@@ -110,6 +113,7 @@
 
   <!--Style for Contents for Entire DL-->
   <xsl:attribute-set name="dlentry">
+    
   </xsl:attribute-set>
 
 
@@ -127,6 +131,7 @@
     <xsl:attribute name="font-family">monaco</xsl:attribute>
     <xsl:attribute name="padding-top">4pt</xsl:attribute>
     <xsl:attribute name="background-color">#DADEDA</xsl:attribute>
+    <xsl:attribute name="text-align">center</xsl:attribute>
   </xsl:attribute-set>
 
 
@@ -135,6 +140,7 @@
     <xsl:attribute name="keep-together.within-page">always</xsl:attribute>
      <xsl:attribute name="font-family">monaco</xsl:attribute>
      <xsl:attribute name="text-align">center</xsl:attribute>
+     <xsl:attribute name="margin-right">4pt</xsl:attribute>
      <!-- <xsl:attribute name="background-color">#DADEDA</xsl:attribute> -->
   </xsl:attribute-set>
 
@@ -153,6 +159,8 @@
   </xsl:attribute-set>
 
   <xsl:attribute-set name="dlhead.ddhd__content" use-attribute-sets="common.table.body.entry common.table.head.entry">
+    <xsl:attribute name="text-align">center</xsl:attribute>
+    <xsl:attribute name="font-size">13pt</xsl:attribute>
   </xsl:attribute-set>
 
 

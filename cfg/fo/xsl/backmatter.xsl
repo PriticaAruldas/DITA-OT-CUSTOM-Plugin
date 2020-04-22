@@ -16,14 +16,14 @@
                 <xsl:choose>
                         <!-- set the organization name -->    
                         <xsl:when test="exists($pdfbase_authorinformation/descendant::*[contains(@class, ' xnal-d/organizationname ')])">
-                                <fo:block xsl:use-attribute-sets="__backmatter__Contents">
+                                <fo:block xsl:use-attribute-sets="__backmatter__organizationname">
                                         <xsl:value-of>
                                                 <xsl:apply-templates select="$pdfbase_authorinformation/descendant::*[contains(@class, ' xnal-d/organizationname ')]"/>
                                         </xsl:value-of>
                                 </fo:block>
                         </xsl:when>
                         <xsl:otherwise>             
-                                <fo:block xsl:use-attribute-sets="__backmatter__Contents">
+                                <fo:block xsl:use-attribute-sets="__backmatter__organizationname">
                                         <xsl:apply-templates select="$pdfbase_authorinformation/descendant::*[contains(@class, ' xnal-d/organizationname ')]" />
                                 </fo:block>                                 
                         </xsl:otherwise>
@@ -31,7 +31,7 @@
                 <xsl:choose>
                          <!-- set the address -->     
                         <xsl:when test="exists($pdfbase_authorinformation/descendant::*[contains(@class, ' xnal-d/addressdetails ')])">
-                                <fo:block xsl:use-attribute-sets="__backmatter__Contents">
+                                <fo:block xsl:use-attribute-sets="__backmatter__address">
                                         <xsl:value-of>
                                                 <xsl:apply-templates select="$pdfbase_authorinformation/descendant::*[contains(@class, ' xnal-d/addressdetails ')]"/>
                                         </xsl:value-of>
@@ -39,7 +39,7 @@
                         </xsl:when> 
 
                         <xsl:otherwise>              
-                                <fo:block xsl:use-attribute-sets="__backmatter__Contents">
+                                <fo:block xsl:use-attribute-sets="__backmatter__address">
                                         <xsl:apply-templates select="$pdfbase_authorinformation/descendant::*[contains(@class, ' xnal-d/addressdetails ')]"/>
                                 </fo:block>                         
                         </xsl:otherwise>

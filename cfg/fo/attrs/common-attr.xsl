@@ -141,6 +141,24 @@
                 <!-- <xsl:attribute name='src'>url(Customization/OpenTopic/common/artwork/note_img.jpeg)</xsl:attribute> -->
         </xsl:attribute-set>
 
+        <xsl:attribute-set name="page-sequence.cover" use-attribute-sets="__force__page__count">
+            <xsl:attribute name="font-family">monaco</xsl:attribute>
+            <xsl:attribute name="font-size">13pt</xsl:attribute> 
+		    <xsl:attribute name="font-weight">bold</xsl:attribute>
+        </xsl:attribute-set>
+
+        <xsl:attribute-set name="page-sequence.frontmatter">
+            <xsl:attribute name="format">i</xsl:attribute>
+        </xsl:attribute-set>
+  
+        <xsl:attribute-set name="page-sequence.notice" use-attribute-sets="__force__page__count page-sequence.frontmatter">
+        </xsl:attribute-set>
+    
+        <xsl:attribute-set name="page-sequence.backmatter.notice" use-attribute-sets="__force__page__count">
+        <xsl:attribute name="format">1</xsl:attribute>
+        </xsl:attribute-set>
+
+
     <!--Common Borders-->
 	<xsl:attribute-set name="common.border__top ">
 		<xsl:attribute name="border-before-style">solid</xsl:attribute>

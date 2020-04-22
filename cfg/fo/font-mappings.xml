@@ -82,7 +82,7 @@ See the accompanying LICENSE file for applicable license.
       </physical-font>
     </logical-font>
 
-    <aliases>
+    <!-- <aliases>
       <alias name="simple">simple</alias>
     </aliases>
     
@@ -90,7 +90,7 @@ See the accompanying LICENSE file for applicable license.
       <physical-font char-set="default">
         <font-face>Georgia, serif</font-face>
       </physical-font>
-    </logical-font>
+    </logical-font> -->
 
     <aliases>
       <alias name="block">block</alias>
@@ -108,7 +108,7 @@ See the accompanying LICENSE file for applicable license.
     
     <logical-font name="monaco">
       <physical-font char-set="default">
-        <font-face>ZCOOLXiaoWei-Regular, Courier New, Courier, monospace</font-face>
+        <font-face>ZCOOLXiaoWei-Regular, Georgia, serif</font-face>
       </physical-font>
     </logical-font>
 

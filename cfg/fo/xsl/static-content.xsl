@@ -7,7 +7,7 @@
  <!-- <xsl:template name="insertBodyOddFooter">
         <fo:static-content flow-name="odd-body-footer">
             <xsl:call-template name="insertFooterContent">
-                <xsl:with-param name="addChapterTitle" select="true()"/>
+                <xsl:with-param name="addChapterTitle" select="true()"/>    
             </xsl:call-template>
         </fo:static-content>
     </xsl:template> -->

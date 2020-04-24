@@ -34,7 +34,7 @@ To use the plugin, use the following steps using command line:
                 - block - The block contains chapter links with chapter descriptions displayed one after the other.
         - Topic Title - It contains the topic title on left side and followed by the topic description and sub topics.
     3.Header
-    `The Header contains the Chapter name and page number.
+    The Header contains the Chapter name and page number.
         - Even Pages- Contains the page number first and the chapter title on the left side.
         - Odd Pages Contains the chapter title first and the page number on the right side.
     
@@ -42,5 +42,7 @@ To use the plugin, use the following steps using command line:
         The Backmatter page contains:
          - The Logo on the top left on the page.
          - The Organization name and address at the center of the page.
+         
+   
         
         

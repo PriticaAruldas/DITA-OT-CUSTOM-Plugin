@@ -11,7 +11,7 @@
         </xsl:attribute-set>
 
         <xsl:attribute-set name="__index__letter-group" use-attribute-sets="border_top border_bottom">
-            <xsl:attribute name="font-size">17pt</xsl:attribute>
+            <xsl:attribute name="font-size">15pt</xsl:attribute>
             <xsl:attribute name="font-weight">bold</xsl:attribute>
             <xsl:attribute name="padding-top">4pt</xsl:attribute>    
             <xsl:attribute name="color"><xsl:value-of select="$custom_green_color"/></xsl:attribute>
@@ -19,7 +19,7 @@
 
         <!-- FIXME: Incorrectly named, should be index.group -->
     <xsl:attribute-set name="index.entry">
-        <xsl:attribute name="font-size">13pt</xsl:attribute>
+        <xsl:attribute name="font-size">12pt</xsl:attribute>
         <xsl:attribute name="font-family">monaco</xsl:attribute>
     </xsl:attribute-set>
   
@@ -33,7 +33,7 @@
         <xsl:attribute name="last-line-end-indent">0pt</xsl:attribute>
         <xsl:attribute name="start-indent"><xsl:value-of select="$index.indent"/> * 2</xsl:attribute>
         <xsl:attribute name="text-indent">-<xsl:value-of select="$index.indent"/> * 2</xsl:attribute>
-        <xsl:attribute name="font-size">29pt</xsl:attribute>
+        <xsl:attribute name="font-size">9pt</xsl:attribute>
     </xsl:attribute-set>
     
     <xsl:attribute-set name="index.entry__content">

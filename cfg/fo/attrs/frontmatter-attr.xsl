@@ -13,7 +13,7 @@
     <xsl:attribute name="font-weight">bold</xsl:attribute>
     <xsl:attribute name='margin-left'>50pt</xsl:attribute> 
     <xsl:attribute name='text-align'>left</xsl:attribute>   
-	<xsl:attribute name="font-family">arial</xsl:attribute>
+	<xsl:attribute name="font-family">monaco</xsl:attribute>
     <xsl:attribute name="color">red</xsl:attribute>
 </xsl:attribute-set>
 
@@ -29,7 +29,7 @@
     <xsl:attribute name="font-weight">bold</xsl:attribute>
     <xsl:attribute name='padding-left'>50pt</xsl:attribute> 
     <xsl:attribute name='text-align'>left</xsl:attribute>   
-	<xsl:attribute name="font-family">arial</xsl:attribute>
+	<xsl:attribute name="font-family">monaco</xsl:attribute>
     <xsl:attribute name="color">red</xsl:attribute>
 </xsl:attribute-set>
 
@@ -38,7 +38,7 @@
 		<xsl:attribute name="color">black</xsl:attribute>
          <xsl:attribute name='text-align'>left</xsl:attribute>
          <xsl:attribute name='margin-left'>25pt</xsl:attribute> 
-		<xsl:attribute name="font-family">arial</xsl:attribute>
+		<xsl:attribute name="font-family">monaco</xsl:attribute>
     </xsl:attribute-set>
 <!---frontmatter logo-->
 

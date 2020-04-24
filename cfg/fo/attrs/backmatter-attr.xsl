@@ -46,7 +46,7 @@
                 <xsl:attribute name="color">black</xsl:attribute>
                 <xsl:attribute name="text-align">center</xsl:attribute>
                 <xsl:attribute name="font-size">25pt</xsl:attribute>
-                <xsl:attribute name="font-family">arial</xsl:attribute>
+                <xsl:attribute name="font-family">monaco</xsl:attribute>
                  <xsl:attribute name="padding-bottom">7pt</xsl:attribute>
         </xsl:attribute-set>
 
@@ -55,7 +55,7 @@
                 <xsl:attribute name="text-align">center</xsl:attribute>
                 <xsl:attribute name="color">black</xsl:attribute>
                 <xsl:attribute name="font-size">20pt</xsl:attribute>
-                <xsl:attribute name="font-family">arial</xsl:attribute>
+                <xsl:attribute name="font-family">monaco</xsl:attribute>
         </xsl:attribute-set> 
 
 </xsl:stylesheet>

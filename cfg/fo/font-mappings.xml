@@ -108,7 +108,7 @@ See the accompanying LICENSE file for applicable license.
     
     <logical-font name="monaco">
       <physical-font char-set="default">
-        <font-face>ZCOOLXiaoWei-Regular, Georgia, serif</font-face>
+        <font-face>ProductSans-Light, Georgia, serif</font-face>
       </physical-font>
     </logical-font>
 
@@ -128,7 +128,7 @@ See the accompanying LICENSE file for applicable license.
     
     <logical-font name="arial">
       <physical-font char-set="default">
-        <font-face>"PTSans-Bold", Gadget, sans-serif</font-face>
+        <font-face>"ProductSans-Regular", Gadget, sans-serif</font-face>
       </physical-font>
     </logical-font>
 

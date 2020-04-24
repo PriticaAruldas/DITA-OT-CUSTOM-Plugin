@@ -301,6 +301,90 @@
         </fo:page-sequence>
     </xsl:template>
     
+
+   <!-- <xsl:template match="*[contains(@class,' topic/topicref/note ')]">
+            <fo:table>
+                <fo:table-column column-number="1" column-width="50mm"/>
+                 <fo:table-column column-number="2" column-width="180mm"/>
+                 <fo:table-body>
+                 <fo:table-row>
+                    <fo:table-cell>
+                        <fo:block>
+                            <fo:external-graphic xsl:use-attribute-sets="image"/>
+                        </fo:block>
+                        <fo:block xsl:use-attribute-sets="note">
+                           <xsl:choose>
+                        <xsl:when test="$pdf2.ug.chapter.header eq 'dita-ot-default'">
+                            <xsl:apply-templates select="." mode="insertChapterFirstpageStaticContent">
+                                <xsl:with-param name="type" select="'notices'"/>
+                            </xsl:apply-templates>
+                        </xsl:when>
+                    </xsl:choose>
+                    
+                    <xsl:choose>
+                        <xsl:when test="$pdf2.ug.chapter.header eq 'dita-ot-default'">
+                            <fo:block font-size="70pt" xsl:use-attribute-sets="topic.title">
+                                <xsl:call-template name="pullPrologIndexTerms"/>
+                                <xsl:for-each select="*[contains(@class,' topic/title ')]">
+                                    <xsl:apply-templates select="." mode="getTitle"/>
+                                </xsl:for-each>
+                            </fo:block>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <fo:block xsl:use-attribute-sets="pdf2.ug.topic.title pdf2.ug.chapter.name.and.number">
+                                <xsl:call-template name="pullPrologIndexTerms"/>
+                                <xsl:for-each select="*[contains(@class,' topic/title ')]">
+                                    <xsl:apply-templates select="." mode="getTitle"/>
+                                </xsl:for-each>
+                            </fo:block>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                    <xsl:choose>
+                        <xsl:when test="$noticesLayout='BASIC'">
+                            <xsl:apply-templates select="*[not(contains(@class, ' topic/topic ') or contains(@class, ' topic/title ') or
+                                contains(@class, ' topic/prolog '))]"/>  -->
+                            <!--xsl:apply-templates select="." mode="buildRelationships"/-->
+                        <!-- </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:apply-templates select="." mode="createMiniToc"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                        </fo:block>
+                    </fo:table-cell>
+                 </fo:table-row>
+                  </fo:table-body>
+            </fo:table>
+    </xsl:template> -->
+
+   <!-- <xsl:template match="*[contains(@class,' topic/note ')]">
+        <xsl:variable name="noteImagePath">
+            <xsl:apply-templates select="." mode="setNoteImagePath"/>
+        </xsl:variable>
+        <xsl:choose>
+            <xsl:when test="not($noteImagePath = '')">
+                <fo:table xsl:use-attribute-sets="note__table">
+                    <fo:table-column column-number="1" column-width="50mm"/>
+                    <fo:table-column column-number="2" column-width="150mm"/>
+                    <fo:table-body>
+                        <fo:table-row>
+                            <fo:table-cell xsl:use-attribute-sets="note__image__entry">
+                                <fo:block>
+                                    <fo:external-graphic src="url('{concat($artworkPrefix, $noteImagePath)}')" xsl:use-attribute-sets="image" content-width="12px" content-height="12px"/>
+                                </fo:block>
+                            </fo:table-cell>
+                            <fo:table-cell xsl:use-attribute-sets="note">
+                                <xsl:apply-templates select="." mode="placeNoteContent"/>
+                            </fo:table-cell>
+                        </fo:table-row>
+                    </fo:table-body>
+                </fo:table>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:apply-templates select="." mode="placeNoteContent"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template> -->
+
     <xsl:template match="*" mode="createMiniToc">
         <xsl:choose>
             <xsl:when test="$pdf2.ug.chapter.minitoc.layout eq 'dita-ot-default'">

@@ -5,6 +5,9 @@
             xmlns:dita="http://dita-ot.sourceforge.net" 
             dita:extension="depends org.dita.dost.platform.InsertDependsAction">
         <property name="customization.dir" location="${dita.plugin.com.metapercept.cust-pdf.dir}/cfg"/>
+
+        <property name="artworkPrefix" value="${customization.dir}/common/artwork"/>
+
         <antcall target="dita2pdf2"/>
     </target>
 </project>

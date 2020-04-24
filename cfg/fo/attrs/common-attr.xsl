@@ -5,7 +5,7 @@
                 version="2.0">
 
 <!-- <xsl:variable name="custom_blue_color">blue</xsl:variable> -->
-<xsl:variable name="default-font-size">13pt</xsl:variable>
+<xsl:variable name="default-font-size">12pt</xsl:variable>
 
 <!--image-->
 <xsl:attribute-set name="image">
@@ -15,6 +15,7 @@
 		<xsl:attribute name="scaling">uniform</xsl:attribute>
 		<xsl:attribute name="text-align">left</xsl:attribute>
 		<xsl:attribute name="keep-with-previous.within-page">always</xsl:attribute>
+         <xsl:attribute name='src'>url(Customization/OpenTopic/common/artwork/note.png)</xsl:attribute>
 </xsl:attribute-set>
 
 <!-- image title -->
@@ -65,8 +66,6 @@
 	-->
 
     <xsl:attribute-set name="topic.title">
-		<!-- <xsl:attribute name="color" select="$custom_green_color"/> -->
-        <!-- <xsl:attribute name="font-size">15pt</xsl:attribute> -->
 		<xsl:attribute name="padding-bottom">4pt</xsl:attribute>
     </xsl:attribute-set>
 	
@@ -82,7 +81,7 @@
     <!--Style for chatper topic's Sub-topic-->
 	<xsl:attribute-set name="topic.topic.topic.title" use-attribute-sets="subtopic.border__bottom subtopic.border__top">
 		<xsl:attribute name="color" select="$custom_green_color"/>
-        <xsl:attribute name="font-size">15pt</xsl:attribute>
+        <xsl:attribute name="font-size">13pt</xsl:attribute>
         <xsl:attribute name="font-family">monaco</xsl:attribute>
 		<xsl:attribute name="padding-bottom">3pt</xsl:attribute>
         <xsl:attribute name="padding-top">3pt</xsl:attribute>
@@ -93,7 +92,7 @@
     <!-- paragraph-like blocks -->
     <xsl:attribute-set name="common.block">
         <xsl:attribute name="space-before">1em</xsl:attribute>
-        <xsl:attribute name="font-size">13pt</xsl:attribute>
+        <xsl:attribute name="font-size">12pt</xsl:attribute>
        <xsl:attribute name="font-family">monaco</xsl:attribute>
         <xsl:attribute name="space-after">1em</xsl:attribute>
     </xsl:attribute-set>
@@ -101,7 +100,7 @@
 <!-- titles -->
   <xsl:attribute-set name="common.title">
     <xsl:attribute name="font-family">monaco</xsl:attribute>
-    <xsl:attribute name="font-size">13pt</xsl:attribute>
+    <xsl:attribute name="font-size">12pt</xsl:attribute>
   </xsl:attribute-set>
 
     <!--font size attribute-->
@@ -125,25 +124,51 @@
          <xsl:attribute name="margin-top">15pt</xsl:attribute>
          <xsl:attribute name="font-family">monaco</xsl:attribute>
 		<xsl:attribute name="margin-bottom">15pt</xsl:attribute>
-        <xsl:attribute name="font-size">13pt</xsl:attribute>
+        <xsl:attribute name="font-size">12pt</xsl:attribute>
 		<xsl:attribute name="background-color">#F0EFF0</xsl:attribute>
+    </xsl:attribute-set>
+
+    <xsl:attribute-set name="note__table" use-attribute-sets="common.block">
+    </xsl:attribute-set>
+
+    <xsl:attribute-set name="note__image__column">
+        <xsl:attribute name="column-number">1</xsl:attribute>
+        <xsl:attribute name="column-width">32pt</xsl:attribute>
+    </xsl:attribute-set>
+
+    <xsl:attribute-set name="note__text__column">
+      <xsl:attribute name="column-number">2</xsl:attribute>
+      <xsl:attribute name="font-family">monaco</xsl:attribute>
+        <xsl:attribute name="font-size">12pt</xsl:attribute>
+        <xsl:attribute name="start-indent">10pt</xsl:attribute>
+    </xsl:attribute-set>
+
+    <xsl:attribute-set name="note__image__entry">
+        <xsl:attribute name="padding-end">5pt</xsl:attribute>
+        <xsl:attribute name="start-indent">0pt</xsl:attribute>
+    </xsl:attribute-set>
+
+    <xsl:attribute-set name="note__text__entry">
+        <xsl:attribute name="font-family">monaco</xsl:attribute>
+        <xsl:attribute name="font-size">12pt</xsl:attribute>
+        <xsl:attribute name="start-indent">0pt</xsl:attribute>
     </xsl:attribute-set>
 
     <xsl:attribute-set name="note__label" use-attribute-sets="common.border__bottom">
         <xsl:attribute name="border-left-width">5pt</xsl:attribute>
         <xsl:attribute name="border-right-width">5pt</xsl:attribute>
 		<xsl:attribute name="font-family">monaco</xsl:attribute>
-        <xsl:attribute name="font-size">13pt</xsl:attribute> 
+        <xsl:attribute name="font-size">12pt</xsl:attribute> 
 		<xsl:attribute name="font-weight">bold</xsl:attribute>	
     </xsl:attribute-set>
 
         <xsl:attribute-set name="note__image__entry">
-                <!-- <xsl:attribute name='src'>url(Customization/OpenTopic/common/artwork/note_img.jpeg)</xsl:attribute> -->
+              <xsl:attribute name="content-width">absolute</xsl:attribute>  
         </xsl:attribute-set>
 
         <xsl:attribute-set name="page-sequence.cover" use-attribute-sets="__force__page__count">
             <xsl:attribute name="font-family">monaco</xsl:attribute>
-            <xsl:attribute name="font-size">13pt</xsl:attribute> 
+            <xsl:attribute name="font-size">12pt</xsl:attribute> 
 		    <xsl:attribute name="font-weight">bold</xsl:attribute>
         </xsl:attribute-set>
 

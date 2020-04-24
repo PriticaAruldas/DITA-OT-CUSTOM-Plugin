@@ -11,6 +11,7 @@
 		<xsl:attribute name='color'>white</xsl:attribute>
     <xsl:attribute name='font-size'>15pt</xsl:attribute>
     <xsl:attribute name="width">50%</xsl:attribute>
+    <xsl:attribute name="font-family">monaco</xsl:attribute>  
 </xsl:attribute-set>
 
   <xsl:attribute-set name="common.table.body.entry">
@@ -24,7 +25,8 @@
     <xsl:attribute name="margin-right">37pt</xsl:attribute>
     <xsl:attribute name='text-align'>center</xsl:attribute>
 		<xsl:attribute name='color'>black</xsl:attribute>
-    <xsl:attribute name='font-size'>13pt</xsl:attribute>
+    <xsl:attribute name='font-size'>12pt</xsl:attribute>
+    <xsl:attribute name="font-family">monaco</xsl:attribute>  
   </xsl:attribute-set>
 
 
@@ -104,7 +106,7 @@
   <xsl:attribute-set name="dl__body">
     <!-- <xsl:attribute name='color'></xsl:attribute> -->
     <xsl:attribute name="text-align">center</xsl:attribute>
-    <xsl:attribute name="font-size">13pt</xsl:attribute>
+    <xsl:attribute name="font-size">12pt</xsl:attribute>
     <xsl:attribute name="font-family">monaco</xsl:attribute>
   </xsl:attribute-set>
 
@@ -126,7 +128,7 @@
 
   <xsl:attribute-set name="dlentry.dt__content" use-attribute-sets="table__tableframe__bottom">
     <xsl:attribute name='color'>#89B043</xsl:attribute>
-    <xsl:attribute name="font-size">13pt</xsl:attribute>
+    <xsl:attribute name="font-size">12pt</xsl:attribute>
     <xsl:attribute name="font-weight">bold</xsl:attribute>
     <xsl:attribute name="font-family">monaco</xsl:attribute>
     <xsl:attribute name="padding-top">4pt</xsl:attribute>
@@ -160,7 +162,7 @@
 
   <xsl:attribute-set name="dlhead.ddhd__content" use-attribute-sets="common.table.body.entry common.table.head.entry">
     <xsl:attribute name="text-align">center</xsl:attribute>
-    <xsl:attribute name="font-size">13pt</xsl:attribute>
+    <xsl:attribute name="font-size">12pt</xsl:attribute>
   </xsl:attribute-set>
 
 
@@ -174,7 +176,7 @@
 
   <xsl:attribute-set name="simpletable__body">
      <xsl:attribute name="background-color">blue</xsl:attribute>
-    <xsl:attribute name="font-size">13pt</xsl:attribute>
+    <xsl:attribute name="font-size">12pt</xsl:attribute>
     <xsl:attribute name="font-weight">bold</xsl:attribute>
     <xsl:attribute name="font-family">monaco</xsl:attribute>
   </xsl:attribute-set>

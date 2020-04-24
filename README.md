@@ -19,7 +19,8 @@ To use the plugin, use the following steps using command line:
 
 
 # ABOUT PLUGIN
-    **Frontmatter**
+
+    # Frontmatter
         The Frontmatter Page Contains values:
         - Background Image
         - Company Logo

@@ -5,7 +5,7 @@
                 version="2.0">
 
 <!-- <xsl:variable name="custom_blue_color">blue</xsl:variable> -->
-<xsl:variable name="default-font-size">12pt</xsl:variable>
+<xsl:variable name="default-font-size">10pt</xsl:variable>
 
 <!--image-->
 <xsl:attribute-set name="image">
@@ -21,7 +21,7 @@
 <!-- image title -->
 <xsl:attribute-set name="fig.title" use-attribute-sets="base-font common.title">
         <xsl:attribute name="font-weight">normal</xsl:attribute>
-		<xsl:attribute name="font-size">12pt</xsl:attribute>
+		<xsl:attribute name="font-size">10pt</xsl:attribute>
 		<xsl:attribute name="color">black</xsl:attribute>
         <xsl:attribute name="space-before">5pt</xsl:attribute>
         <xsl:attribute name="space-after">10pt</xsl:attribute>
@@ -72,7 +72,7 @@
     <!--style for chapter topic-->
 	<xsl:attribute-set name="topic.topic.title" use-attribute-sets="topic.border__bottom">
 		<xsl:attribute name="color" select="$custom_green_color"/>
-        <xsl:attribute name="font-size">15pt</xsl:attribute>
+        <xsl:attribute name="font-size">13pt</xsl:attribute>
         <xsl:attribute name="font-family">monaco</xsl:attribute>
         <xsl:attribute name="font-weight">bold</xsl:attribute>
 		<xsl:attribute name="padding-bottom">4pt</xsl:attribute>
@@ -81,7 +81,7 @@
     <!--Style for chatper topic's Sub-topic-->
 	<xsl:attribute-set name="topic.topic.topic.title" use-attribute-sets="subtopic.border__bottom subtopic.border__top">
 		<xsl:attribute name="color" select="$custom_green_color"/>
-        <xsl:attribute name="font-size">13pt</xsl:attribute>
+        <xsl:attribute name="font-size">10pt</xsl:attribute>
         <xsl:attribute name="font-family">monaco</xsl:attribute>
 		<xsl:attribute name="padding-bottom">3pt</xsl:attribute>
         <xsl:attribute name="padding-top">3pt</xsl:attribute>
@@ -92,7 +92,7 @@
     <!-- paragraph-like blocks -->
     <xsl:attribute-set name="common.block">
         <xsl:attribute name="space-before">1em</xsl:attribute>
-        <xsl:attribute name="font-size">12pt</xsl:attribute>
+        <xsl:attribute name="font-size">10pt</xsl:attribute>
        <xsl:attribute name="font-family">monaco</xsl:attribute>
         <xsl:attribute name="space-after">1em</xsl:attribute>
     </xsl:attribute-set>
@@ -100,7 +100,7 @@
 <!-- titles -->
   <xsl:attribute-set name="common.title">
     <xsl:attribute name="font-family">monaco</xsl:attribute>
-    <xsl:attribute name="font-size">12pt</xsl:attribute>
+    <xsl:attribute name="font-size">10pt</xsl:attribute>
   </xsl:attribute-set>
 
     <!--font size attribute-->
@@ -124,7 +124,7 @@
          <xsl:attribute name="margin-top">15pt</xsl:attribute>
          <xsl:attribute name="font-family">monaco</xsl:attribute>
 		<xsl:attribute name="margin-bottom">15pt</xsl:attribute>
-        <xsl:attribute name="font-size">12pt</xsl:attribute>
+        <xsl:attribute name="font-size">10pt</xsl:attribute>
 		<xsl:attribute name="background-color">#F0EFF0</xsl:attribute>
     </xsl:attribute-set>
 
@@ -139,7 +139,7 @@
     <xsl:attribute-set name="note__text__column">
       <xsl:attribute name="column-number">2</xsl:attribute>
       <xsl:attribute name="font-family">monaco</xsl:attribute>
-        <xsl:attribute name="font-size">12pt</xsl:attribute>
+        <xsl:attribute name="font-size">10pt</xsl:attribute>
         <xsl:attribute name="start-indent">10pt</xsl:attribute>
     </xsl:attribute-set>
 
@@ -150,7 +150,7 @@
 
     <xsl:attribute-set name="note__text__entry">
         <xsl:attribute name="font-family">monaco</xsl:attribute>
-        <xsl:attribute name="font-size">12pt</xsl:attribute>
+        <xsl:attribute name="font-size">10pt</xsl:attribute>
         <xsl:attribute name="start-indent">0pt</xsl:attribute>
     </xsl:attribute-set>
 
@@ -158,7 +158,7 @@
         <xsl:attribute name="border-left-width">5pt</xsl:attribute>
         <xsl:attribute name="border-right-width">5pt</xsl:attribute>
 		<xsl:attribute name="font-family">monaco</xsl:attribute>
-        <xsl:attribute name="font-size">12pt</xsl:attribute> 
+        <xsl:attribute name="font-size">10pt</xsl:attribute> 
 		<xsl:attribute name="font-weight">bold</xsl:attribute>	
     </xsl:attribute-set>
 
@@ -168,7 +168,7 @@
 
         <xsl:attribute-set name="page-sequence.cover" use-attribute-sets="__force__page__count">
             <xsl:attribute name="font-family">monaco</xsl:attribute>
-            <xsl:attribute name="font-size">12pt</xsl:attribute> 
+            <xsl:attribute name="font-size">10pt</xsl:attribute> 
 		    <xsl:attribute name="font-weight">bold</xsl:attribute>
         </xsl:attribute-set>
 

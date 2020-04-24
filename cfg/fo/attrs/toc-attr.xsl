@@ -31,7 +31,7 @@
     <!--Chapter title-->
     <xsl:attribute-set name="__toc__chapter__content" use-attribute-sets="__toc__topic__content common.border_bottom common.border_top">
         <xsl:attribute name="font-weight">normal</xsl:attribute>
-        <xsl:attribute name="font-size">15pt</xsl:attribute>
+        <xsl:attribute name="font-size">13pt</xsl:attribute>
         <xsl:attribute name="text-align">center</xsl:attribute>
         <xsl:attribute name="start-indent">20pt</xsl:attribute>
         <xsl:attribute name="color"><xsl:value-of select="$custom_green_color"/></xsl:attribute>
@@ -87,7 +87,7 @@
         Attribute set used when rendering the chapter's MINITOC for ug customization.
     -->
     <xsl:attribute-set name="pdf2.ug__toc__mini" use-attribute-sets="__toc__mini">
-        <xsl:attribute name="font-size">12pt</xsl:attribute>
+        <xsl:attribute name="font-size">10pt</xsl:attribute>
         <xsl:attribute name="font-family">monaco</xsl:attribute>
         <xsl:attribute name="end-indent">5pt</xsl:attribute>
     </xsl:attribute-set>

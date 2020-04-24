@@ -43,6 +43,15 @@ To use the plugin, use the following steps using command line:
          - The Logo on the top left on the page.
          - The Organization name and address at the center of the page.
          
+         
+    # ABOUT VARIABLES
+        1. variable-name : custom_green_color
+            This variable is used to give green color to chapter title, chapter topics and sub topics.
+        2. variable-name : mirror-page-margins
+            This variable is used for displaying the header contents on right side on even pages.
+        3. variable-name : pdfbase_authorinformation
+            This variable is used to display organization information.
+         
    
         
         

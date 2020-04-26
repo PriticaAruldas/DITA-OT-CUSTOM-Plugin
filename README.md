@@ -8,6 +8,7 @@ Project organization:
 2. plugin.xml - The plugin descriptor file.
 3. build.xml, integrator.xml- These files are plugin build files.
 4. AdditionalParameters - This file contains the additional parameters used for customizing the chapter name and numbers.
+5. fonts - This folder contains the font ProductSans that we use for our Customization.
 
 To use the plugin, use the following steps using command line:
 1. Download DITA-OT 3.3.2
@@ -16,42 +17,3 @@ To use the plugin, use the following steps using command line:
 4. Invoke the PDF transformation using the **cust-pdf** transtype in a command, as in the following example:
 
     dita --input=BookMap.ditamap --output=plugin_output --format=cust-pdf
-
-
-# ABOUT PLUGIN
-
-    1.Frontmatter
-        The Frontmatter Page Contains values:
-        - Background Image
-        - Company Logo
-        - BookTitle and SubTitle
-        
-    2.Chapter
-        It contains:
-        - Title - Title on Left Side.
-        - Chapter minitoc:
-            It Contains possible values:
-                - block - The block contains chapter links with chapter descriptions displayed one after the other.
-        - Topic Title - It contains the topic title on left side and followed by the topic description and sub topics.
-    3.Header
-    The Header contains the Chapter name and page number.
-        - Even Pages- Contains the page number first and the chapter title on the left side.
-        - Odd Pages Contains the chapter title first and the page number on the right side.
-    
-    3.Backmatter
-        The Backmatter page contains:
-         - The Logo on the top left on the page.
-         - The Organization name and address at the center of the page.
-         
-         
-    ABOUT VARIABLES
-        1. variable-name : custom_green_color
-            This variable is used to give green color to chapter title, chapter topics and sub topics.
-        2. variable-name : mirror-page-margins
-            This variable is used for displaying the header contents on right side on even pages.
-        3. variable-name : pdfbase_authorinformation
-            This variable is used to display organization information.
-         
-   
-        
-        

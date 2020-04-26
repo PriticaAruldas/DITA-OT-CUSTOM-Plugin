@@ -10,7 +10,7 @@
 ## Chapter
 
     It contains:
-    * Title - Title on Left Side.
+    * Chapter Title - Title on Left Side.
     * Chapter minitoc:
         It Contains possible values:
             - block - The block contains chapter links with chapter descriptions displayed one after the other.

@@ -17,3 +17,8 @@ To use the plugin, use the following steps using command line:
 4. Invoke the PDF transformation using the **cust-pdf** transtype in a command, as in the following example:
 
     dita --input=BookMap.ditamap --output=plugin_output --format=cust-pdf
+
+
+Read About [Plugin](https://github.com/PriticaAruldas/DITA-OT-CUSTOM-Plugin/blob/master/About_Plugin.md)
+
+Read About [Variables](https://github.com/PriticaAruldas/DITA-OT-CUSTOM-Plugin/blob/master/Variables.md)

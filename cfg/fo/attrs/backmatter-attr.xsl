@@ -6,18 +6,17 @@
 
 
 <!--Backmatter Logo Container-->
-<xsl:attribute-set name='__backmatter__logo__container'>
+        <xsl:attribute-set name='__backmatter__logo__container'>
                 <xsl:attribute name="content-width">absolute</xsl:attribute>
-
         </xsl:attribute-set>
 
 <!--Backmatter Logo-->
         <xsl:attribute-set name='__backmatter__logo'>
-                <xsl:attribute name='src'>url(Customization/OpenTopic/common/artwork/MetaperceptLogo.png)</xsl:attribute>
+                <xsl:attribute name='src'>url(Customization/OpenTopic/common/artwork/Logo/MetaperceptLogo.png)</xsl:attribute>
                 <xsl:attribute name='width'>550px</xsl:attribute>
                 <xsl:attribute name='height'>550px</xsl:attribute>
                 <xsl:attribute name='scaling'>Uniform</xsl:attribute>
-                <xsl:attribute name='padding-left'>10pt</xsl:attribute>
+                <xsl:attribute name='padding-left'>470pt</xsl:attribute>
                 <xsl:attribute name='padding-top'>10pt</xsl:attribute>
         </xsl:attribute-set>
 

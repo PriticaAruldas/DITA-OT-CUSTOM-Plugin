@@ -11,7 +11,8 @@
     <xsl:attribute name="space-after">10mm</xsl:attribute>
     <xsl:attribute name="font-size">20pt</xsl:attribute>
     <xsl:attribute name="font-weight">bold</xsl:attribute>
-    <xsl:attribute name='margin-left'>50pt</xsl:attribute> 
+    <xsl:attribute name='margin-left'>50pt</xsl:attribute>
+    <xsl:attribute name='margin-top'>300pt</xsl:attribute> 
     <xsl:attribute name='text-align'>left</xsl:attribute>   
 	<xsl:attribute name="font-family">monaco</xsl:attribute>
     <xsl:attribute name="color">red</xsl:attribute>
@@ -24,7 +25,6 @@
 </xsl:attribute-set>
 
 <xsl:attribute-set name='__frontmatter__owner'>
-    <!-- <xsl:attribute name="space-before">100mm</xsl:attribute> -->
     <xsl:attribute name="font-size">20pt</xsl:attribute>
     <xsl:attribute name="font-weight">bold</xsl:attribute>
     <xsl:attribute name='padding-left'>50pt</xsl:attribute> 
@@ -43,7 +43,7 @@
 <!---frontmatter logo-->
 
 <xsl:attribute-set name='__frontmatter__logo'>
-    <xsl:attribute name='src'>url(Customization/OpenTopic/common/artwork/MetaperceptLogo.png)</xsl:attribute>
+    <xsl:attribute name='src'>url(Customization/OpenTopic/common/artwork/Logo/MetaperceptLogo.png)</xsl:attribute>
     <xsl:attribute name='padding-top'>450pt</xsl:attribute>
     <xsl:attribute name='padding-right'>50pt</xsl:attribute>
     <xsl:attribute name='padding-left'>50pt</xsl:attribute>

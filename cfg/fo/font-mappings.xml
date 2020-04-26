@@ -81,17 +81,7 @@ See the accompanying LICENSE file for applicable license.
         <font-face>"Comic Sans MS", cursive, sans-serif</font-face>
       </physical-font>
     </logical-font>
-
-    <!-- <aliases>
-      <alias name="simple">simple</alias>
-    </aliases>
     
-    <logical-font name="simple">
-      <physical-font char-set="default">
-        <font-face>Georgia, serif</font-face>
-      </physical-font>
-    </logical-font> -->
-
     <aliases>
       <alias name="block">block</alias>
     </aliases>

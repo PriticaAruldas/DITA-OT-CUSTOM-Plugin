@@ -267,7 +267,7 @@
                     
                     <xsl:choose>
                         <xsl:when test="$pdf2.ug.chapter.header eq 'dita-ot-default'">
-                            <fo:block font-size="70pt" xsl:use-attribute-sets="topic.title">
+                            <fo:block xsl:use-attribute-sets="topic.title">
                                 <xsl:call-template name="pullPrologIndexTerms"/>
                                 <xsl:for-each select="*[contains(@class,' topic/title ')]">
                                     <xsl:apply-templates select="." mode="getTitle"/>

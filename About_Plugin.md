@@ -10,11 +10,19 @@
 ## Chapter
 
     It contains:
+<<<<<<< HEAD
     1. Title - Title on Left Side.
     2. Chapter minitoc:
         It Contains possible values:
             - block - The block contains chapter links with chapter descriptions displayed one after the other.
     3. Topic Title - It contains the topic title on left side and followed by the topic description and sub- topics.
+=======
+    1. Chapter Title - Title on Left Side.
+    2. Chapter minitoc:
+        It Contains possible values:
+            - block - The block contains chapter links with chapter descriptions displayed one after the other.
+    3. Topic Title - It contains the topic title on left side and followed by the topic description and sub-topics.
+>>>>>>> a10b9fe14a676bf6ab24da9f3a4c97be4cf6d8af
 
 ## Header
 
@@ -24,6 +32,10 @@
 
 ## Backmatter
     The Backmatter page contains:
+<<<<<<< HEAD
      1. The Logo on the top right of the page.
+=======
+     1. The Logo on the top of the page.
+>>>>>>> a10b9fe14a676bf6ab24da9f3a4c97be4cf6d8af
      2. The Organization name and address at the center of the page.
     

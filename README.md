@@ -18,6 +18,13 @@ To use the plugin, use the following steps using command line:
 
     dita --input=BookMap.ditamap --output=plugin_output --format=cust-pdf
 
+<<<<<<< HEAD
 Read About [Plugins](https://github.com/PriticaAruldas/DITA-OT-CUSTOM-Plugin/blob/master/About_Plugin.md)
 
 Read About [Variables](https://github.com/PriticaAruldas/DITA-OT-CUSTOM-Plugin/blob/master/Variables.md)
+=======
+
+Read About [Plugin](https://github.com/PriticaAruldas/DITA-OT-CUSTOM-Plugin/blob/master/About_Plugin.md)
+
+Read About [Variables](https://github.com/PriticaAruldas/DITA-OT-CUSTOM-Plugin/blob/master/Variables.md)
+>>>>>>> a10b9fe14a676bf6ab24da9f3a4c97be4cf6d8af

@@ -14,6 +14,6 @@ This variable is used to set even page Header and Footer Contents.
 
 ## Author Information
 
-- Variable Name : pdfbase_authorinformation
+- Variable Name : authorinfo
 
 This variable used to display organization name.

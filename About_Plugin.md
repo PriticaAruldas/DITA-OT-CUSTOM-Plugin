@@ -14,7 +14,7 @@
     * Chapter minitoc:
         It Contains possible values:
             - block - The block contains chapter links with chapter descriptions displayed one after the other.
-    * Topic Title - It contains the topic title on left side and followed by the topic description and sub      topics.
+    * Topic Title - It contains the topic title on left side and followed by the topic description and sub-topics.
 
 ## Header
 

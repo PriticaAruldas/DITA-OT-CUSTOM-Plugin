@@ -16,9 +16,9 @@
     <!-- set the title -->
     <fo:block xsl:use-attribute-sets="__frontmatter__title">
       <xsl:choose>
-        <xsl:when test="$map/*[contains(@class,' topic/title ')][1]">
+        <!-- <xsl:when test="$map/*[contains(@class,' topic/title ')][1]">
           <xsl:apply-templates select="$map/*[contains(@class,' topic/title ')][1]"/>
-        </xsl:when>
+        </xsl:when> -->
         <xsl:when test="$map//*[contains(@class,' bookmap/mainbooktitle ')][1]">
           <xsl:apply-templates select="$map//*[contains(@class,' bookmap/mainbooktitle ')][1]"/>
         </xsl:when>

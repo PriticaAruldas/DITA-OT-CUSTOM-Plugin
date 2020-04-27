@@ -12,6 +12,7 @@
     <xsl:import href="list-attr.xsl"/>
     <xsl:import href="table-attr.xsl"/>
     <xsl:import href="backmatter-attr.xsl"/>
+     <xsl:import href="note-attr.xsl"/>
 
     <xsl:variable name="page-width">215.9mm</xsl:variable>
     <xsl:variable name="page-height">279.4mm</xsl:variable>

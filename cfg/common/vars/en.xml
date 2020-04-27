@@ -6,10 +6,18 @@
   </variable>
   <!-- Change unordered list bullet to an em dash -->
    <variable id="Unordered List bullet">&#x25AA;</variable>
-
  <!-- <variable id="Unordered List bullet">&#x2014;</variable> -->
   <!-- <variable id="Unordered List bullet L2">&#x25AA;</variable>
       <variable id="Unordered List bullet L3">&#x2023;</variable> -->
+
+    <!-- Image path to use for a note of "warning" type. -->
+  <variable id="notice Note Image Path">Configuration/OpenTopic/cfg/common/artwork/Logo/hand.gif</variable>
+
+   <variable id="caution Note Image Path">hand.gif</variable>
+    <!-- Image path to use for a note of "trouble" type. -->
+    <variable id="trouble Note Image Path">warning.gif</variable>
+    <!-- Image path to use for a note of "other" type. -->
+    <variable id="other Note Image Path">Configuration/OpenTopic/cfg/common/artwork/Logo/hand.gif</variable>
 
   <!-- The footer that appears on Preface odd-numbered pages. -->
 <variable id="Preface odd footer">
@@ -29,7 +37,7 @@ Introduction
 </variable>
 
  <!-- Image path to use for a note of "other" type. -->
-    <variable id="other Note Image Path">url(Customization/OpenTopic/common/artwork/note.png)</variable>
+    <!-- <variable id="other Note Image Path">url(Customization/OpenTopic/common/artwork/note.png)</variable> -->
 
 <!-- The footer that appears on Preface even-numbered pages. -->
 

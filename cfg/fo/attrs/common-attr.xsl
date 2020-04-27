@@ -15,7 +15,7 @@
 		<xsl:attribute name="scaling">uniform</xsl:attribute>
 		<xsl:attribute name="text-align">left</xsl:attribute>
 		<xsl:attribute name="keep-with-previous.within-page">always</xsl:attribute>
-         <xsl:attribute name='src'>url(Customization/OpenTopic/common/artwork/note.png)</xsl:attribute>
+         <xsl:attribute name='src'>url(Customization/OpenTopic/common/artwork/Logo/note.png)</xsl:attribute>
 </xsl:attribute-set>
 
 <!-- image title -->
@@ -114,57 +114,6 @@
         <xsl:attribute name="xml:lang" select="translate($locale, '_', '-')"/>
         <xsl:attribute name="writing-mode" select="$writing-mode"/>
     </xsl:attribute-set>
-
-    <!--Style for Notices-->
-    <xsl:attribute-set name="note">
-		<xsl:attribute name="padding-top">7pt</xsl:attribute>
-		<xsl:attribute name="padding-bottom">7pt</xsl:attribute>
-        <xsl:attribute name="padding-right">7pt</xsl:attribute>
-		<xsl:attribute name="padding-left">7pt</xsl:attribute>
-         <xsl:attribute name="margin-top">15pt</xsl:attribute>
-         <xsl:attribute name="font-family">monaco</xsl:attribute>
-		<xsl:attribute name="margin-bottom">15pt</xsl:attribute>
-        <xsl:attribute name="font-size">10pt</xsl:attribute>
-		<xsl:attribute name="background-color">#F0EFF0</xsl:attribute>
-    </xsl:attribute-set>
-
-    <xsl:attribute-set name="note__table" use-attribute-sets="common.block">
-    </xsl:attribute-set>
-
-    <xsl:attribute-set name="note__image__column">
-        <xsl:attribute name="column-number">1</xsl:attribute>
-        <xsl:attribute name="column-width">32pt</xsl:attribute>
-    </xsl:attribute-set>
-
-    <xsl:attribute-set name="note__text__column">
-      <xsl:attribute name="column-number">2</xsl:attribute>
-      <xsl:attribute name="font-family">monaco</xsl:attribute>
-        <xsl:attribute name="font-size">10pt</xsl:attribute>
-        <xsl:attribute name="start-indent">10pt</xsl:attribute>
-    </xsl:attribute-set>
-
-    <xsl:attribute-set name="note__image__entry">
-        <xsl:attribute name="padding-end">5pt</xsl:attribute>
-        <xsl:attribute name="start-indent">0pt</xsl:attribute>
-    </xsl:attribute-set>
-
-    <xsl:attribute-set name="note__text__entry">
-        <xsl:attribute name="font-family">monaco</xsl:attribute>
-        <xsl:attribute name="font-size">10pt</xsl:attribute>
-        <xsl:attribute name="start-indent">0pt</xsl:attribute>
-    </xsl:attribute-set>
-
-    <xsl:attribute-set name="note__label" use-attribute-sets="common.border__bottom">
-        <xsl:attribute name="border-left-width">5pt</xsl:attribute>
-        <xsl:attribute name="border-right-width">5pt</xsl:attribute>
-		<xsl:attribute name="font-family">monaco</xsl:attribute>
-        <xsl:attribute name="font-size">10pt</xsl:attribute> 
-		<xsl:attribute name="font-weight">bold</xsl:attribute>	
-    </xsl:attribute-set>
-
-        <xsl:attribute-set name="note__image__entry">
-              <xsl:attribute name="content-width">absolute</xsl:attribute>  
-        </xsl:attribute-set>
 
         <xsl:attribute-set name="page-sequence.cover" use-attribute-sets="__force__page__count">
             <xsl:attribute name="font-family">monaco</xsl:attribute>

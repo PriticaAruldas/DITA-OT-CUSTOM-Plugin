@@ -13,5 +13,6 @@
   <xsl:import href="table.xsl"/>
   <xsl:import href="frontmatter.xsl"/>
   <xsl:import href="backmatter.xsl"/>
+   <xsl:import href="note.xsl"/>
 
 </xsl:stylesheet>

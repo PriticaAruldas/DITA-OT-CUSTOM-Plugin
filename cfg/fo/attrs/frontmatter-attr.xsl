@@ -11,7 +11,7 @@
     <!-- <xsl:attribute name="space-after">10mm</xsl:attribute> -->
     <xsl:attribute name="font-size">32pt</xsl:attribute>
     <xsl:attribute name="font-weight">bold</xsl:attribute>
-    <!-- <xsl:attribute name="font-style">oblique</xsl:attribute> -->
+    <xsl:attribute name="font-style">oblique</xsl:attribute>
     <xsl:attribute name='margin-left'>50pt</xsl:attribute>
     <xsl:attribute name='margin-top'>360pt</xsl:attribute> 
     <xsl:attribute name='text-align'>left</xsl:attribute>   

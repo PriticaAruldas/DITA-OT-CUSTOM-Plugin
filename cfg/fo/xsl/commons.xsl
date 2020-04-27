@@ -356,7 +356,8 @@
             </fo:table>
     </xsl:template> -->
 
-   <!-- <xsl:template match="*[contains(@class,' topic/note ')]">
+<!--Template to display note icons with notices-->
+   <xsl:template match="*[contains(@class,' topic/note ')]">
         <xsl:variable name="noteImagePath">
             <xsl:apply-templates select="." mode="setNoteImagePath"/>
         </xsl:variable>
@@ -367,8 +368,8 @@
                     <fo:table-column column-number="2" column-width="150mm"/>
                     <fo:table-body>
                         <fo:table-row>
-                            <fo:table-cell xsl:use-attribute-sets="note__image__entry">
-                                <fo:block>
+                            <fo:table-cell>
+                                <fo:block xsl:use-attribute-sets="image">
                                     <fo:external-graphic src="url('{concat($artworkPrefix, $noteImagePath)}')" xsl:use-attribute-sets="image" content-width="12px" content-height="12px"/>
                                 </fo:block>
                             </fo:table-cell>
@@ -383,7 +384,7 @@
                 <xsl:apply-templates select="." mode="placeNoteContent"/>
             </xsl:otherwise>
         </xsl:choose>
-    </xsl:template> -->
+    </xsl:template>
 
     <xsl:template match="*" mode="createMiniToc">
         <xsl:choose>

@@ -21,3 +21,5 @@ To use the plugin, use the following steps using command line:
 Read About [Plugins](https://github.com/PriticaAruldas/DITA-OT-CUSTOM-Plugin/blob/master/About_Plugin.md)
 
 Read About [Variables](https://github.com/PriticaAruldas/DITA-OT-CUSTOM-Plugin/blob/master/Variables.md)
+
+View Plugin [Screens](https://github.com/PriticaAruldas/DITA-OT-CUSTOM-Plugin/tree/master/Screens)

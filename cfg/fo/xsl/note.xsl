@@ -118,7 +118,7 @@
         </fo:block>
     </xsl:template>
 
-    <xsl:template match="*[contains(@class,' topic/note ')]" mode="setNoteImagePath">
+ <xsl:template match="*[contains(@class,' topic/note ')]" mode="setNoteImagePath">
       <xsl:variable name="noteType" as="xs:string">
           <xsl:choose>
               <xsl:when test="@type">
@@ -134,7 +134,7 @@
       </xsl:call-template>
     </xsl:template>
 
-    <xsl:template match="*[contains(@class,' topic/note ')]">
+    <xsl:template match="*[contains(@class,' topic/note ')]">       
         <xsl:variable name="noteImagePath">
             <xsl:apply-templates select="." mode="setNoteImagePath"/>
         </xsl:variable>
@@ -147,11 +147,7 @@
                         <fo:table-row>
                                 <fo:table-cell xsl:use-attribute-sets="note__image__entry">
                                     <fo:block>
-                                        <fo:external-graphic src="url('{concat($artworkPrefix, $noteImagePath)}')" 
-                                                             padding-right="3pt"
-                                                             vertical-align="middle"
-                                                             baseline-shift="baseline"
-                                                             xsl:use-attribute-sets="image"/>
+                                        <fo:external-graphic xsl:use-attribute-sets="image"/>
                                     </fo:block>
                                 </fo:table-cell>
                                 <fo:table-cell xsl:use-attribute-sets="note__text__entry">
@@ -166,5 +162,61 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
+
+    <!-- <xsl:template  match="*[contains(@class,' topic/note ')]">
+      <xsl:variable name="noteImagePath">
+            <xsl:apply-templates select="." mode="setNoteImagePath"/>
+        </xsl:variable>
+        <fo:table>
+            <fo:table-column column-number="1" column-width="50mm"/>
+             <fo:table-column column-number="2" column-width="100mm"/>
+                <fo:table-body>
+                    <fo:table-row>
+                        <fo:table-cell>
+                            <fo:block xsl:use-attribute-sets="note">
+                            </fo:block>
+                        </fo:table-cell>
+
+                        <fo:table-cell>
+                              <fo:block xsl:use-attribute-sets="note__label">
+                            </fo:block>
+                        </fo:table-cell>
+                    </fo:table-row>
+                </fo:table-body>
+        </fo:table>
+    </xsl:template> -->
+
+    <!-- <xsl:template match="*[contains(@class,' topic/note ')]">       
+        <xsl:variable name="noteImagePath">
+            <xsl:apply-templates select="." mode="setNoteImagePath"/>
+        </xsl:variable>
+        <xsl:choose>
+            <xsl:when test="not($noteImagePath = '')">
+                <fo:table xsl:use-attribute-sets="note__table">
+                    <fo:table-column column-number="1" coumn-width="150mm"/>
+                    <fo:table-column column-number="2" coumn-width="150mm" xsl:use-attribute-sets="note"/>
+                    <fo:table-body>
+                        <fo:table-row>
+                                <fo:table-cell  xsl:use-attribute-sets="note">
+                                    <fo:block > -->
+                                        <!-- <fo:external-graphic src="url('{concat($artworkPrefix, $noteImagePath)}')" 
+                                                             padding-right="3pt"
+                                                             vertical-align="middle"
+                                                             baseline-shift="baseline"
+                                                             xsl:use-attribute-sets="image"/> -->
+                                    <!-- </fo:block>
+                                </fo:table-cell>
+                                <fo:table-cell  xsl:use-attribute-sets="note">
+                                    <xsl:apply-templates select="." mode="placeNoteContent"/>
+                                </fo:table-cell>
+                        </fo:table-row>
+                    </fo:table-body>
+                </fo:table>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:apply-templates select="." mode="placeNoteContent"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template> -->
 
 </xsl:stylesheet>

@@ -4,7 +4,7 @@
     xmlns:fox="http://xmlgraphics.apache.org/fop/extensions"
  version="2.0">
 
-    <xsl:attribute-set name="__toc__topic__content" >
+    <xsl:attribute-set name="__toc__topic__content">
         <xsl:attribute name="color">
             <xsl:variable name="level" select="count(ancestor-or-self::*[contains(@class, ' topic/topic ')])"/>
             <xsl:choose>
@@ -20,7 +20,7 @@
         <xsl:attribute name="padding-bottom">3pt</xsl:attribute>
     </xsl:attribute-set>
 
-        <!--Header of contents page-->
+    <!--Header of contents page-->
     <xsl:attribute-set name="__toc__header" use-attribute-sets="common.title">
         <xsl:attribute name="color"><xsl:value-of select="$custom_green_color"/></xsl:attribute>
         <xsl:attribute name="font-size">30pt</xsl:attribute>
@@ -29,7 +29,7 @@
     </xsl:attribute-set>
     
     <!--Chapter title-->
-    <xsl:attribute-set name="__toc__chapter__content" use-attribute-sets="__toc__topic__content common.border_bottom common.border_top">
+    <xsl:attribute-set name="__toc__chapter__content" use-attribute-sets="__toc__topic__content">
         <xsl:attribute name="font-weight">normal</xsl:attribute>
         <xsl:attribute name="font-size">13pt</xsl:attribute>
         <xsl:attribute name="text-align">center</xsl:attribute>

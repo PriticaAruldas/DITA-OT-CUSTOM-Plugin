@@ -50,9 +50,6 @@
     </xsl:attribute-set>
 
     <xsl:attribute-set name="note__text__entry">
-        <xsl:attribute name="font-family">monaco</xsl:attribute>
-        <xsl:attribute name="font-size">70pt</xsl:attribute>
-        <xsl:attribute name="start-indent">0pt</xsl:attribute>
     </xsl:attribute-set>
 
     <xsl:attribute-set name="note__label" use-attribute-sets="common.border__bottom">

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin id="com.metapercept.cust-pdf">
+    <require plugin="org.dita.pdf2"/>
+  <feature extension="dita.conductor.transtype.check" value="cust-pdf"/>
+  <feature extension="dita.transtype.print" value="cust-pdf"/>
+  <feature extension="dita.conductor.target.relative" file="build.xml"/> 
+   <feature extension="dita.conductor.pdf2.param" file="AdditionalParameters.xml"/>
+  <transtype name="cust-pdf" extends="pdf2" desc="PDF2 customization for DITAxPresso">
+  
+  <param name="pdf2.ug.chapter.header" 
+            desc="Select the layout of the top level DITA map components like: 
+            chapter, appendix, notices. The possible values are:\n
+            * title-and-chapter-number - Title aligned in the left part and chapter number in the right\n
+            * dita-ot-default - The default DITA-OT rendering"
+            type="enum">
+            <val default="true">title-and-chapter-number</val>
+            <val>dita-ot-default</val>
+        </param>
+
+        <param name="pdf2.ug.chapter.minitoc.layout"
+            descr="Select the layout of the chapter's minitoc.\n
+            
+            The possible values are:\n
+            * block - The blocks with chapter links and chapter descriptions will be layout in two separate blocks, 
+            one after other.\n
+            * dita-ot-default - The default DITA-OT rendering with a table layout with one row with two cells. 
+            The first cell presents links to the chapter's topics and the second cell presents a short description of the chapter."
+            type="enum">
+            <val default="true">block</val>
+        </param>
+            <val>dita-ot-default</val>
+      </transtype>
+</plugin>

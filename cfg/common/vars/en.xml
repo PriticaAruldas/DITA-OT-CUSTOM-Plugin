@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vars xmlns="http://www.idiominc.com/opentopic/vars">
+  <!-- Remove dot from list number -->
+  <variable id="Ordered List Number">
+    <param ref-name="number"/>
+  </variable>
+  <!-- Change unordered list bullet to an em dash -->
+   <variable id="Unordered List bullet">&#x25AA;</variable>
+ <!-- <variable id="Unordered List bullet">&#x2014;</variable> -->
+  <!-- <variable id="Unordered List bullet L2">&#x25AA;</variable>
+      <variable id="Unordered List bullet L3">&#x2023;</variable> -->
+      
+  <!-- Image path to use for a note of "note" type. -->
+  <variable id="note Note Image Path">note.svg</variable>
+  <!-- Image path to use for a note of "notice" type. -->
+  <variable id="notice Note Image Path">notice.svg</variable>
+  <!-- Image path to use for a note of "attention" type. -->
+  <variable id="attention Note Image Path">attention.svg</variable>
+  <!-- Image path to use for a note of "caution" type. -->
+  <variable id="caution Note Image Path">caution.svg</variable>
+  <!-- Image path to use for a note of "danger" type. -->
+  <variable id="danger Note Image Path">danger.svg</variable>
+  <!-- Image path to use for a note of "warning" type. -->
+  <variable id="warning Note Image Path">warning.svg</variable>
+  <!-- Image path to use for a note of "fastpath" type. -->
+  <variable id="fastpath Note Image Path">fastpath.svg</variable>
+  <!-- Image path to use for a note of "important" type. -->
+  <variable id="important Note Image Path">important.svg</variable>
+  <!-- Image path to use for a note of "remember" type. -->
+  <variable id="remember Note Image Path">remember.svg</variable>
+  <!-- Image path to use for a note of "restriction" type. -->
+  <variable id="restriction Note Image Path">restriction.svg</variable>
+  <!-- Image path to use for a note of "tip" type. -->
+  <variable id="tip Note Image Path">tip.svg</variable>
+  <!-- Image path to use for a note of "troubleshooting" type. -->
+  <variable id="trouble Note Image Path">trouble.svg</variable>
+  <!-- Image path to use for a note of "other" type. -->
+  <variable id="other Note Image Path">pad.svg</variable>
+
+
+  <!-- The footer that appears on Preface odd-numbered pages. -->
+<variable id="Preface odd footer">
+  <param ref-name="pagenum"/>
+  <param ref-name="prodname"/>
+</variable>
+
+<!-- The header that appears on Preface even-numbered pages. -->
+<variable id="Preface even footer">
+    <param ref-name="pagenum"/>
+</variable>
+
+<variable id="Preface odd header">
+<param ref-name="prodname"/>
+Introduction 
+<param ref-name="pagenum"/>
+</variable>
+
+ <!-- Image path to use for a note of "other" type. -->
+    <!-- <variable id="other Note Image Path">url(Customization/OpenTopic/common/artwork/note.png)</variable> -->
+
+<!-- The footer that appears on Preface even-numbered pages. -->
+
+
+
+<variable id="Preface even header">
+<param ref-name="pagenum"/>
+Introduction 
+<param ref-name="prodname"/>
+</variable>
+</vars>
